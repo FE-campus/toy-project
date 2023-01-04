@@ -5,18 +5,25 @@
 :root {
   /* Color */
   --color-white: #fdf5ff;
+  --color-apricot: #ffeee0;
+  --color-darkApricot: #ead8cb;
   --color-black: #3c423e;
   --color-grey: #767676;
   --color-lightGrey: #aaaaaa;
   --color-salmon: #ff8071;
+  --color-darkSalmon: #fd7767;
   --color-lightBlue: #22c0c9;
   --color-darkBlue: #18a2ac;
+  --color-red: #a30001;
 
   /* Weight */
+  --weight-regular: 400;
   --weight-bold: 600;
+  --weight-more-bold: 800;
 
   /* Border-radius */
   --borer-radius-regular: 15px;
+  --borer-radius-rounded: 50px;
 
   /* Animation */
   --animation-duration: 300ms;
@@ -131,4 +138,111 @@ nav {
 
 .category:hover {
   color: var(--color-grey);
+}
+
+/* barrel */
+.barrel {
+  background-image: url(./images/barrel.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.barrel__img {
+  width: 100%;
+}
+
+.barrel__container {
+  margin: 10rem;
+}
+
+.barrel__moto {
+  text-align: center;
+}
+
+.barrel__bar {
+  width: 35rem;
+}
+
+.barrel__title {
+  font-size: 3rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-apricot);
+}
+
+.barrel__series {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+.barrel__slide {
+  width: 30rem;
+}
+
+.barrel__content {
+  white-space: nowrap;
+}
+
+.series__title {
+  margin: 2.5rem 0;
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-apricot);
+}
+
+.series__subtitle {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  font-weight: var(--weight-regular);
+  color: var(--color-darkApricot);
+}
+
+.series__line {
+  margin: 2rem 0 4rem 0;
+  height: 1px;
+  border: 0;
+  background-color: var(--color-apricot);
+}
+
+.series__reservation {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: var(--color-darkSalmon);
+}
+
+.barrel__comeback {
+  padding-bottom: 7rem;
+  text-align: center;
+  color: var(--color-apricot);
+}
+
+.comeback__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: var(--weight-bold);
+}
+
+.comeback__subtitle {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.comeback__btn {
+  margin: 2rem 0;
+  padding: 1rem 20rem;
+  border-radius: var(--borer-radius-rounded);
+  background-color: var(--color-apricot);
+}
+
+.comeback__alarm {
+  font-size: 1.4rem;
+  font-weight: var(--weight-more-bold);
+  color: var(--color-red);
+}
+
+.comeback__opinion {
+  font-size: 1rem;
+  font-weight: var(--weight-more-bold);
+  color: var(--color-darkSalmon);
 }

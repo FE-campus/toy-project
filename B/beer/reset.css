@@ -1,8 +1,15 @@
 /* 최초 세팅 */
+body {
+  margin: 0;
+}
 
 ul {
   padding-inline-start: 0;
   list-style: none;
+}
+
+p {
+  margin: 0;
 }
 
 button {
