@@ -1,0 +1,12 @@
+/* 최초 세팅 */
+
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

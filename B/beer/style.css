@@ -1,0 +1,134 @@
+/* 사용한 방법론: BEM (Block, Element, Modifier)*/
+/* 작성 방식: Element는 두 개의 언더바, Modifier는 두 개의 대쉬로 구분 */
+/*  Block__Element--Modifier */
+
+:root {
+  /* Color */
+  --color-white: #fdf5ff;
+  --color-black: #3c423e;
+  --color-grey: #767676;
+  --color-lightGrey: #aaaaaa;
+  --color-salmon: #ff8071;
+  --color-lightBlue: #22c0c9;
+  --color-darkBlue: #18a2ac;
+
+  /* Weight */
+  --weight-bold: 600;
+
+  /* Border-radius */
+  --borer-radius-regular: 15px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* navbar */
+nav {
+  height: 9rem;
+  display: flex;
+  margin: 0rem 8rem;
+}
+
+.nav__left,
+.nav__center,
+.nav__right {
+  width: 33%;
+  padding: 2rem 0;
+}
+
+.nav__center {
+  text-align: center;
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__logo {
+  width: 4.5rem;
+  height: 6rem;
+}
+
+.nav__categories {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 1rem;
+}
+
+.nav__category {
+  cursor: pointer;
+  margin: 0.5rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-grey);
+}
+
+.nav__category:hover {
+  transition: all var(--animation-duration) ease;
+  color: var(--color-lightGrey);
+}
+
+.nav__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__button1,
+.nav__button2 {
+  margin: 0 0.3rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: var(--weight-bold);
+  border-radius: var(--borer-radius-regular);
+  color: var(--color-white);
+  transition: all var(--animation-duration) ease-in;
+  white-space: nowrap;
+}
+
+.nav__button1 {
+  background-color: var(--color-salmon);
+}
+
+.nav__button1:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px var(--color-salmon) inset;
+  color: var(--color-salmon);
+}
+
+.nav__button2 {
+  background-color: var(--color-lightBlue);
+}
+
+.nav__button2:hover {
+  background-color: var(--color-darkBlue);
+}
+
+/* category */
+.category__container {
+  margin: 1rem 14rem;
+  height: 3rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.category {
+  cursor: pointer;
+  padding: 0.7rem 0;
+  font-size: 0.9rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.category:first-child {
+  color: var(--color-lightBlue);
+  border-bottom: 1px solid #22c0c9;
+}
+
+.category:hover {
+  color: var(--color-grey);
+}
