@@ -411,13 +411,34 @@ nav {
 }
 
 .qna__toggle {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.9rem;
   border-bottom: 1px solid var(--color-black);
   font-size: 0.9rem;
   color: var(--color-black);
+}
+
+.qna__question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.qna__answer {
+  display: none;
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-lightGrey);
+}
+
+.qna__content {
+  padding-left: 0.5rem;
+}
+
+.enter {
+  margin-bottom: 0.5rem;
+}
+
+.show {
+  display: block;
 }
 
 /* notice */
