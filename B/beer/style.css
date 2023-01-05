@@ -45,6 +45,14 @@
   margin-bottom: 0.5rem;
 }
 
+.btn__top {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
 /* navbar */
 nav {
   height: 9rem;
