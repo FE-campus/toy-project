@@ -60,6 +60,7 @@ nav img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 1050px;
 }
 
 .menu__left {
@@ -172,17 +173,21 @@ nav img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #212121;
   padding: 15px;
 }
 
 footer img {
-  width: 125px;
-  margin-right: 125px;
+  width: 160px;
+  margin-right: 50px;
+}
+
+.footer__middle {
+  margin-left: 30px;
 }
 
 .footer__middle p {
-  color: gray;
+  color: #535353;
   font-size: 12px;
   line-height: 20px;
 }
@@ -194,5 +199,29 @@ footer img {
 .footer__right {
   display: flex;
   flex-direction: row;
-  margin-left: 125px;
+  margin-left: 80px;
+  margin-right: 15px;
+}
+
+.footer__icon {
+  width: auto;
+  height: 25px;
+  background-color: #151515;
+  color: #535353;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__icon i {
+  color: #e84a36;
+  font-size: 10px;
+  padding-left: 25px;
 }
