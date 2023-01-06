@@ -65,12 +65,25 @@
           <img class="barrel__bar" src="images/bar.png" alt="bar" />
         </div>
         <div class="barrel__series">
-          <!-- 슬라이드 추가 -->
-          <img
-            class="barrel__slide"
-            src="images/barrelSlide1.png"
-            alt="slide"
-          />
+          <!-- slide -->
+          <div class="barrel__slide">
+            <input type="radio" name="slide" id="radio1" checked>
+            <input type="radio" name="slide" id="radio2">
+            <input type="radio" name="slide" id="radio3">
+            <input type="radio" name="slide" id="radio4">
+            <ul class="barrel__images">
+              <li><img src="images/barrelSlide1.png"></li>
+              <li><img src="images/barrelSlide2.png"></li>
+              <li><img src="images/barrelSlide3.png"></li>
+              <li><img src="images/barrelSlide4.png"></li>
+            </ul>
+            <div class="bullets">
+              <label for="radio1">&nbsp;</label>
+              <label for="radio2">&nbsp;</label>
+              <label for="radio3">&nbsp;</label>
+              <label for="radio4">&nbsp;</label>
+            </div>
+          </div>
           <div class="barrel__content">
             <p class="series__title">
               제주맥주 배럴 시리즈 : 삐아프 아티장 쇼콜라티에 에디션
@@ -115,7 +128,6 @@
         <img class="edition__image" src="images/wine3.png" alt="wine3" />
       </div>
       <img class="edition__logo" src="images/limitedLogo.png" alt="logo" />
-      <!-- 슬라이드 추가 -->
       <img class="edition__slide" src="images/editionSlide1.png" alt="slide" />
       <div class="edition__contents">
         <p class="edition__content">제주맥주는 맥주도 미식 세계의 주인공이 될 수 있다는 믿음으로,</p>
@@ -180,12 +192,25 @@
           <img class="barrel__bar" src="images/bar.png" alt="bar" />
         </div>
         <div class="barrel__series">
-          <!-- 슬라이드 추가 -->
-          <img
-            class="barrel__slide"
-            src="images/barrelSlide1.png"
-            alt="slide"
-          />
+        <!-- slide -->
+        <div class="christmas__slide">
+          <input type="radio" name="slide1" id="e_radio1" checked>
+          <input type="radio" name="slide1" id="e_radio2">
+          <input type="radio" name="slide1" id="e_radio3">
+          <input type="radio" name="slide1" id="e_radio4">
+          <ul class="christmas__images">
+            <li><img src="images/barrelSlide1.png"></li>
+            <li><img src="images/barrelSlide2.png"></li>
+            <li><img src="images/barrelSlide3.png"></li>
+            <li><img src="images/barrelSlide4.png"></li>
+          </ul>
+          <div class="christmas__bullets">
+            <label for="e_radio1">&nbsp;</label>
+            <label for="e_radio2">&nbsp;</label>
+            <label for="e_radio3">&nbsp;</label>
+            <label for="e_radio4">&nbsp;</label>
+          </div>
+        </div>
           <div class="christmas__content">
             <p class="christmas__title">
               제주맥주 배럴 시리즈 : 삐아프 아티장 쇼콜라티에 에디션
@@ -359,5 +384,6 @@
     <script src="./js/script.js"></script>
     <script src="./js/top.js"></script>
     <script src="./js/toggle.js"></script>
+    <script src="./js/slide.js"></script>
   </body>
 </html>

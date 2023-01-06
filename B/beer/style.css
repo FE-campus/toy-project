@@ -200,8 +200,105 @@ nav {
   margin: 5rem 0;
 }
 
+/* slide */
 .barrel__slide {
-  width: 30rem;
+  width: 25rem;
+  height: 30rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.barrel__slide > input[type='radio'] {
+  display: none;
+}
+
+.barrel__images > li {
+  position: absolute;
+  opacity: 0;
+  transition-delay: 0.9s;
+}
+
+.barrel__images > li > img {
+  width: 25rem;
+}
+
+.bullets {
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: transparent;
+}
+
+.bullets > label {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.3rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  width: 8px;
+  height: 8px;
+}
+
+/* 활성 상태 해당 라디오 색상 표시 */
+.barrel__slide
+  input[type='radio']:nth-child(1):checked
+  ~ .bullets
+  > label:nth-child(1) {
+  background-color: var(--color-white);
+}
+.barrel__slide
+  input[type='radio']:nth-child(2):checked
+  ~ .bullets
+  > label:nth-child(2) {
+  background-color: var(--color-white);
+}
+.barrel__slide
+  input[type='radio']:nth-child(3):checked
+  ~ .bullets
+  > label:nth-child(3) {
+  background-color: var(--color-white);
+}
+.barrel__slide
+  input[type='radio']:nth-child(4):checked
+  ~ .bullets
+  > label:nth-child(4) {
+  background-color: var(--color-white);
+}
+
+/* 라디오가 활성 상태이면 사진 보이게 */
+.barrel__slide
+  input[type='radio']:nth-child(1):checked
+  ~ ul.barrel__images
+  > li:nth-child(1) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.barrel__slide
+  input[type='radio']:nth-child(2):checked
+  ~ ul.barrel__images
+  > li:nth-child(2) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.barrel__slide
+  input[type='radio']:nth-child(3):checked
+  ~ ul.barrel__images
+  > li:nth-child(3) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.barrel__slide
+  input[type='radio']:nth-child(4):checked
+  ~ ul.barrel__images
+  > li:nth-child(4) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
 }
 
 .barrel__content {
@@ -368,6 +465,107 @@ nav {
 
 .christmas__container {
   padding: 10rem 10rem 3rem 10rem;
+}
+
+/* slide */
+.christmas__slide {
+  width: 27rem;
+  height: 30rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.christmas__slide > input[type='radio'] {
+  display: none;
+}
+
+.christmas__images > li {
+  position: absolute;
+  opacity: 0;
+  transition-delay: 0.9s;
+}
+
+.christmas__images > li > img {
+  width: 27rem;
+}
+
+.christmas__bullets {
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: transparent;
+}
+
+.christmas__bullets > label {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.3rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  width: 8px;
+  height: 8px;
+}
+
+/* 활성 상태 해당 라디오 색상 표시 */
+.christmas__slide
+  input[type='radio']:nth-child(1):checked
+  ~ .christmas__bullets
+  > label:nth-child(1) {
+  background-color: var(--color-white);
+}
+.christmas__slide
+  input[type='radio']:nth-child(2):checked
+  ~ .christmas__bullets
+  > label:nth-child(2) {
+  background-color: var(--color-white);
+}
+.christmas__slide
+  input[type='radio']:nth-child(3):checked
+  ~ .christmas__bullets
+  > label:nth-child(3) {
+  background-color: var(--color-white);
+}
+.christmas__slide
+  input[type='radio']:nth-child(4):checked
+  ~ .christmas__bullets
+  > label:nth-child(4) {
+  background-color: var(--color-white);
+}
+
+/* 라디오가 활성 상태이면 사진 보이게 */
+.christmas__slide
+  input[type='radio']:nth-child(1):checked
+  ~ ul.christmas__images
+  > li:nth-child(1) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.christmas__slide
+  input[type='radio']:nth-child(2):checked
+  ~ ul.christmas__images
+  > li:nth-child(2) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.christmas__slide
+  input[type='radio']:nth-child(3):checked
+  ~ ul.christmas__images
+  > li:nth-child(3) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.christmas__slide
+  input[type='radio']:nth-child(4):checked
+  ~ ul.christmas__images
+  > li:nth-child(4) {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
 }
 
 .christmas__content {
