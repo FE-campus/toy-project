@@ -489,47 +489,28 @@ nav {
   width: 27rem;
 }
 
-.christmas__bullets {
-  position: absolute;
-  left: 50%;
-  bottom: 75px;
-  transform: translateX(-50%);
-  z-index: 100;
-  background-color: transparent;
-}
-
-.christmas__bullets > label {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 0.3rem;
-  border-radius: 50%;
-  border: 1px solid var(--color-white);
-  width: 8px;
-  height: 8px;
-}
-
 /* 활성 상태 해당 라디오 색상 표시 */
 .christmas__slide
   input[type='radio']:nth-child(1):checked
-  ~ .christmas__bullets
+  ~ .bullets
   > label:nth-child(1) {
   background-color: var(--color-white);
 }
 .christmas__slide
   input[type='radio']:nth-child(2):checked
-  ~ .christmas__bullets
+  ~ .bullets
   > label:nth-child(2) {
   background-color: var(--color-white);
 }
 .christmas__slide
   input[type='radio']:nth-child(3):checked
-  ~ .christmas__bullets
+  ~ .bullets
   > label:nth-child(3) {
   background-color: var(--color-white);
 }
 .christmas__slide
   input[type='radio']:nth-child(4):checked
-  ~ .christmas__bullets
+  ~ .bullets
   > label:nth-child(4) {
   background-color: var(--color-white);
 }

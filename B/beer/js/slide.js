@@ -1,3 +1,4 @@
+// barrel 슬라이드
 let count = 1;
 
 setInterval(function () {
@@ -6,6 +7,7 @@ setInterval(function () {
   if (count > 4) count = 1;
 }, 4000);
 
+// christmas 슬라이드
 let c_count = 1;
 
 setInterval(function () {
