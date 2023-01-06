@@ -1,16 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Hahmlet:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;700&display=swap");
+/*
+방법론 : BEM
+작성방식 : 블록-내부요소-기능
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700;800&family=Hahmlet:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;700&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Asap", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
-  font-family: "Asap", sans-serif;
-  font-family: "Noto Sans KR", sans-serif;
   height: 100vh;
-  background-color: powderblue;
 }
 
 /* Navbar */
@@ -55,12 +59,117 @@ nav img {
   color: #e84a36;
 }
 
+/* Slider */
+.slider__wrapper {
+  background-image: url(./images/웹\ 1920\ –\ 1.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  width: 1519.2px;
+  height: 665px;
+  overflow: hidden;
+}
+
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.slider .slide.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: 2s;
+}
+.slide__background__text {
+  position: absolute;
+  top: 50px;
+  font-size: 120px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.slide__text__left {
+  color: #4a4a4a;
+}
+
+.slide__text__right {
+  color: #888888;
+}
+
+.slider .slide img {
+  position: absolute;
+  width: 400px;
+  object-fit: cover;
+}
+
+.slider .slide .slide__info {
+  position: absolute;
+  color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+}
+
+.slider .slide .slide__info p {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.slider .slide .slide__info small {
+  font-size: 12px;
+  margin-top: 7px;
+  margin-bottom: 18px;
+}
+
+.slide__button {
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  text-transform: uppercase;
+  width: 120px;
+  padding: 8px;
+  background-color: #161616;
+  color: white;
+}
+
+.slider__navigation {
+  height: 665px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.prev__button,
+.next__button {
+  z-index: 9999;
+  font-size: 100px;
+  color: #e84a36;
+  cursor: pointer;
+  padding: 10px;
+}
+
 /* Menu */
 .menu__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 1050px;
+  margin-top: 100px;
 }
 
 .menu__left {
