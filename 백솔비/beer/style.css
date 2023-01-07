@@ -381,6 +381,45 @@ nav {
   margin-bottom: 5rem;
 }
 
+/* carousel */
+.carousel {
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.carousel__container {
+  position: relative;
+  width: 300vw;
+  transform: translateX(-65vw);
+  transition: transform 0.5s;
+}
+
+.carousel__inner {
+  margin: 0 0.5rem;
+  /* width: 100vw; */
+  float: left;
+}
+
+.carousel__img {
+  width: 30rem;
+}
+
+.carousel__btns {
+  position: absolute;
+  transform: translateY(235%);
+  display: flex;
+  z-index: 100;
+}
+
+.carousel__prev,
+.carousel__next {
+  color: var(--color-white);
+}
+
+.carousel__next {
+  transform: translateX(1355%);
+}
+
 .edition__contents {
   margin-bottom: 2rem;
 }
@@ -403,11 +442,6 @@ nav {
 
 .edition__image {
   width: 20rem;
-}
-
-.edition__slide {
-  width: 30rem;
-  margin-bottom: 3rem;
 }
 
 /* collaboration */
