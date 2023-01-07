@@ -1,0 +1,23 @@
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+@font-face {
+	font-family: "Gotham";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/GothamPro-Medium.eot);
+	src: local("Gotham"), local("Gotham"),
+		url(../font/GothamPro-Medium.eot) format("embedded-opentype"),
+		url(../font/GothamPro-Medium.woff) format("woff"),
+		url(../font/GothamPro-Medium.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "GothamLight";
+	font-style: normal;
+	font-weight: 200;
+	src: url(../font/GothamPro-Light.eot);
+	src: local("Gotham"), local("Gotham"),
+		url(../font/GothamPro-Light.eot) format("embedded-opentype"),
+		url(../font/GothamPro-Light.woff) format("woff"),
+		url(../font/GothamPro-Light.ttf) format("truetype");
+}
