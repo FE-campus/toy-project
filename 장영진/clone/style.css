@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 106px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 0 auto;
+  width: 1000px;
+  height: 106px;
+}
+
+.navbar-center ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  width: 564px;
+}
+
+.navbar-end ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  width: 80px
+}
+
+/* ul 공통화 필요 */
+
+.logo img {
+  background: url('/img/logo.gif') 0 0 no-repeat;
+  width: 109px;
+  height: 77px;
+}
+
+.navbar-center {
+  display: flex;
+}
+
+.carousel {
+  height: 762px;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+.carousel img {
+  height: 762px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category {
+  width: 1512px;
+  margin: 0 auto;
+}
+
+.category ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto 150px;
+}
+
+.carousel-2 {
+  margin: 0 auto 130px;
+}
