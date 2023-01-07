@@ -1,3 +1,7 @@
+/* BEM 방식으로 CSS 코드 작성 */
+/* BLOCK ELEMENT MODIFIER 의 약자임 */
+/* block__element--modifier 형태로 css 코드 작성 완료 */
+
 @import url(../css/font.css);
 @import url(../css/init.css);
 
