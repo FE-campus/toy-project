@@ -118,4 +118,37 @@
   margin: 0 auto 1rem;
 }
 
-.brick-layout
+.brick-layout {
+  width: 1000px;
+  height: 1030px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.brick {
+  position: absolute;
+}
+
+.brick-1 {
+  width: 490px;
+  top: 0;
+  left: 0;
+}
+
+.brick-2 {
+  width: 490px;
+  top: 0;
+  right: 0;
+}
+
+.brick-3 {
+  width: 490px;
+  top: 510px;
+  left: 0
+}
+
+.brick-4 {
+  width: 490px;
+  top: 345px;
+  right: 0;
+}
