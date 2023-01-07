@@ -1,5 +1,6 @@
 
 // Q & A dropdown toggle 구현
+// 제주도 질문 부분 잘안눌림 - 추후 해결 할 것
 try {
 
   const questionBox = document.querySelectorAll('.q-box');
@@ -7,15 +8,14 @@ try {
   questionBox.forEach(el => {
     el.addEventListener('click', (e) => {
       const targetBox = e.target.parentNode.lastElementChild;
-      console.log(targetBox);
       const answerBox = e.target.parentNode.nextElementSibling;
       if (targetBox.innerText === "arrow_drop_down") {
         targetBox.innerText = "arrow_drop_up";
       } else {
         targetBox.innerText = "arrow_drop_down";
       }
+      console.log(answerBox)
       answerBox.classList.toggle('toggle');
-  
     })
   });
 
