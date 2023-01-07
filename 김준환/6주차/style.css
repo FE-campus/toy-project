@@ -223,18 +223,10 @@ navbar {
 }
 .carousel-img {
   width: 550px;
+  display:none;
 }
-.item-1 {
+.show {
   display: block;
-}
-.item-2 {
-  display: none;
-}
-.item-3 {
-  display: none;
-}
-.item-4 {
-  display: none;
 }
 .carousel-right {
   margin: 0px 100px 0px 100px;
@@ -271,10 +263,10 @@ navbar {
   margin-top: 20px;
   width: 800px;
 }
-/* .black-content {
+.black-content {
   background-color: black;
   margin: 200px 0 200px 0;
   padding-top: 200px;
   display: flex;
   justify-content: center;
-} */
+}
