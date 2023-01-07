@@ -223,7 +223,7 @@ navbar {
 }
 .carousel-img {
   width: 550px;
-  display:none;
+  display: none;
 }
 .show {
   display: block;
@@ -264,9 +264,42 @@ navbar {
   width: 800px;
 }
 .black-content {
-  background-color: black;
+  color: white;
+  background-color: rgb(20, 10, 1);
   margin: 200px 0 200px 0;
-  padding-top: 200px;
+  padding: 0px 180px 0px 180px;
+}
+.star-title-series {
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
+}
+.star-main-title {
+  width: 650px;
+  margin-top: 200px;
+}
+.card-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 355px;
+}
+.card-img {
+  width: 87%;
+  margin-bottom: 20px;
+}
+.card-content {
+  line-height: 170%;
+}
+.carousel-second {
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
+}
+.slide-img {
+  width: 500px;
+  margin: 0 10px 0 10px;
 }
