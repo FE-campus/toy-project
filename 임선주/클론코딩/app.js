@@ -1,3 +1,18 @@
+// Carousel
+let counter = 1;
+
+setInterval(function () {
+  // radio1 => radio2 => radio3 => radio4
+  document.getElementById("radio" + counter).checked = true;
+
+  counter++;
+
+  // radio4 => radio1
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 4000); // 4초 간격으로
+
 // Slides
 // caching the DOM
 const slider = document.querySelector(".slider");
@@ -42,7 +57,7 @@ function carousel() {
 // 자동재생
 let playSlider;
 
-// 정방향 재생 4초간격으로 반복
+// 정방향 재생 4초 간격으로 반복
 let repeater = () => {
   playSlider = setInterval(function () {
     slideNumber++;
