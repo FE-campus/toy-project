@@ -129,11 +129,16 @@ header {
 }
 
 .header__navbar--tabmenu a {
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.7rem 0.5rem;
 }
 
 .header__navbar--tabmenu a:hover {
   color: var(--txt-hv);
+}
+
+.header__navbar--tabmenu .checked {
+  color: var(--skybl);
+  border-bottom: 1px solid var(--skybl);
 }
 
 
@@ -171,6 +176,7 @@ section {
 .section__bg-img2--title-area,
 .section__bg-img5--title-area {
   margin-top: 7rem;
+  opacity: 0;
 }
 
 .section__bg-img2--title-area img,
@@ -556,7 +562,7 @@ footer {
 
 .footer__area--company-info {
   display: grid;
-  grid-template-columns: 1.5fr 2fr 0.8fr;
+  grid-template-columns: 1.8fr 1fr 0.8fr;
   padding-top: 2rem;
 }
 
@@ -568,7 +574,6 @@ footer {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 1fr;
   font-size: 0.9rem;
-
   font-weight: 300;
 }
 
@@ -599,7 +604,7 @@ footer {
 }
 
 .footer__area--company-text2 {
-  width: 35vw;
+  width: 55vw;
   font-size: 0.83rem;
   margin-top: 2rem;
   line-height: 1.5;
