@@ -103,6 +103,13 @@
   margin-top: -30px;
 }
 
+.carousel1-nav {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
 .carousel-content {
   font-size: 1rem;
   font-weight: 400;
@@ -151,4 +158,17 @@
   width: 490px;
   top: 345px;
   right: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+  height: 120px;
+}
+
+.footer-content {
+
+  width: 1000px;
+  margin: 0 auto;
 }
