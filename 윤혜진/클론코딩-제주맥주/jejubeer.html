@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="init.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="jejubeer.css">
+  <script src="jejubeer.js" defer></script>
+  <script src="https://kit.fontawesome.com/a261e34fb9.js" crossorigin="anonymous"></script>
+  <title>제주맥주 클론코딩</title>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header container">
+    <!-- 헤더 상단 -->
+    <div class="header__top">
+      <img class='header__logo' src="https://cdn.imweb.me/thumbnail/20220715/b51f256bb5dcb.png" alt="">
+      <div class="header__side">
+        <ul class="list-group header__auth-list">
+          <li class="list-group__item">
+            <a class="list-group__link header__auth-link" href="#">LOGIN</a>
+          </li>
+          <li class="list-group__item">
+            <a class="list-group__link header__auth-link" href="#">JOIN</a>
+          </li>
+          <li class="list-group__item">
+            <a class="list-group__link header__auth-link" href="#">CART</a>
+          </li>
+          <li class="list-group__item">
+            <a class="list-group__link header__auth-link" href="#">RECRUIT</a>
+          </li>
+        </ul>
+        <ul class="btn-group">
+          <li class="btn-group__item">
+            <a class="btn-group__link btn-group__link--pill btn-group__link--purchase" href="#">논알콜 제주누보 구매</a>
+          </li>
+          <li class="btn-group__item">
+            <a class="btn-group__link btn-group__link--pill btn-group__link--reservation" href="#">양조장 예약</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 헤더 하단 -->
+    <nav class="nav header__bottom">
+      <ul class="nav__list nav__list--full">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#">
+            <span class="nav__text">BARREL SERIES</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            <span class="nav__text">SUPPORTERS</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            <span class="nav__text">JEJU BEER LIFE</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            <span class="nav__text">SHOP</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            <span class="nav__text">BREWERY</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <!-- 배너 -->
+    <div class="banner">
+      <img class='banner__img' src="https://cdn.imweb.me/thumbnail/20221204/a277e74e35a4c.png" alt="">
+    </div>
+    <!-- 인생에는 초콜릿이 필요한 순간이 있다 -->
+    <section class="section s1">
+      <div class="container">
+        <div class="head">
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221202/a6391c67cbd86.png" alt="">
+          <h2 class="head__title">인생에는 초콜릿이<br>필요한 순간이 있다</h2>
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221202/a6391c67cbd86.png" alt="">
+        </div>
+        <div class="body s1__body">
+          <div class="slider">
+            <div class="slider__inner">
+              <img class="slider__item slider__item--visible"
+                src="https://cdn.imweb.me/thumbnail/20221204/86e044d09da23.png" alt="" data-idx="0">
+              <img class="slider__item" src="https://cdn.imweb.me/thumbnail/20221202/9dcea15b2539f.png" alt=""
+                data-idx="1">
+              <img class="slider__item" src="https://cdn.imweb.me/thumbnail/20221202/1884f09e76023.png" alt=""
+                data-idx="2">
+              <img class="slider__item" src="https://cdn.imweb.me/thumbnail/20221202/3fa9f4fe305f3.png" alt=""
+                data-idx="3">
+            </div>
+            <div class="slider__indicator-group">
+              <button class="slider__indicator slider__indicator--active" type="button"></button>
+              <button class="slider__indicator" type="button"></button>
+              <button class="slider__indicator" type="button"></button>
+              <button class="slider__indicator" type="button"></button>
+            </div>
+          </div>
+          <div class="reservation">
+            <div class="reservation__head">
+              <p class="reservation__title">제주맥주 배럴 시리즈: 삐아프 아티장 쇼콜라티에 에디션</p>
+              <p class="reservation__content">
+                제주맥주 배럴 시리즈는 제주맥주에 보내주신 애정에 대한 감사의 선물이자<br>
+                맥주가 주인공이 되는 미식 세계를 만들고자 하는 집념으로<br>
+                매년 단 한 차례 소량으로 선보이는 한정 제품입니다.
+              </p>
+            </div>
+            <div class="reservation__body">
+              <p class="reservation__info">
+                1차 예약: 종료
+              </p>
+              <p class="reservation__info">
+                2차 예약: 종료
+              </p>
+              <p class="reservation__info">
+                3차 예약: 종료
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="alarm">
+          <p class="alarm__title">
+            [ 제주맥주 배럴 시리즈는 돌아옵니다. ]
+          </p>
+          <p class="alarm__content">
+            예약이 종료되었습니다. 제주맥주 양조장/코너샵 외 추가 판매여부는 확정되어 있지 않습니다. <br>
+            알림 신청 또는 판매 희망지역을 남겨주시면, 추후 판매 재개 또는 추가 픽업 지역 오픈 시 반영됩니다.
+          </p>
+          <button type="button" class="btn btn--pill alarm__btn">
+            배럴 시리즈 소식 알림 신청하기
+            <div class="alarm__btn--subtext">+ 판매 희망 지역 신청 및 의견 남기기</div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- BARREL SERIES -->
+    <section class="section s2">
+      <div class="container">
+        <div class="head">
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221204/a384ec30233e7.png" alt="">
+        </div>
+        <div class="body">
+          <p class="s2__description">
+            <span class="s2__description--bold">제주맥주 배럴 시리즈는 브루마스터의 긴 시간과 노력으로 양조합니다.</span> <br>
+            해마다 각자의 분야에서 확고한 철학을 가진 브랜드와 함께 레시피를 개발합니다.
+          </p>
+          <div class="barrelseries-list">
+            <div class="barrelseries-item">
+              <img class="barrelseries-img" src="https://cdn.imweb.me/thumbnail/20221204/0a2ba89fa4f74.png" alt="">
+              <p class="barrelseries-desc">
+                2020년,<br>
+                <span class="barrelseries-desc--bold">제주맥주 배럴 시리즈 : 임페리얼 스타우트 에디션</span><br>
+                220년 전통의 싱글몰트 위스키 브랜드 ‘하이랜드 파크’의<br>
+                12년 싱글몰트 위스키 배럴에 임페리얼 스타우트를<br>
+                1여 년간 숙성시켜 출시
+              </p>
+            </div>
+            <div class="barrelseries-item">
+              <img class="barrelseries-img" src="https://cdn.imweb.me/thumbnail/20221204/11f4821109305.png" alt="">
+              <p class="barrelseries-desc">
+                2021년,<br>
+                <span class="barrelseries-desc--bold">제주맥주 배럴 시리즈 : 블루보틀 커피 에디션</span><br>
+                버번 배럴에 임페리얼 스타우트를 숙성 후,<br>
+                스페셜티 커피 브랜드 '블루보틀 커피'의<br>
+                대표 블렌드 ‘벨라 도노반’을 드라이 호핑으로 더해 출시
+              </p>
+            </div>
+            <div class="barrelseries-item">
+              <img class="barrelseries-img" src="https://cdn.imweb.me/thumbnail/20221204/7c53017b4a2f9.png" alt="">
+              <p class="barrelseries-desc">
+                2022년,<br>
+                <span class="barrelseries-desc--bold">제주맥주 배럴 시리즈 : 삐아프 아티장 쇼콜라티에 에디션</span><br>
+                오크 배럴에 숙성한 임페리얼 스타우트에<br>
+                삐아프의 두 가지 바닐라빈과 카카오를 더해 출시
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LIMITED EDITION -->
+    <section class="section s3">
+      <div class="container">
+        <div class="head">
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221204/1c2205cb0c039.png" alt="">
+        </div>
+        <div class="body">
+          <div class="carousel s3__carousel">
+            <div class="carousel__inner">
+              <div class="carousel__item">
+                <img class="carousel__img" src="https://cdn.imweb.me/thumbnail/20221203/6a6ecca56926a.png" alt="">
+              </div>
+              <div class="carousel__item">
+                <img class="carousel__img" src="https://cdn.imweb.me/thumbnail/20221203/8e26d00108848.png" alt="">
+              </div>
+              <div class="carousel__item">
+                <img class="carousel__img" src="https://cdn.imweb.me/thumbnail/20221203/c79fd21fd1dd3.png" alt="">
+              </div>
+              <div class="carousel__item">
+                <img class="carousel__img" src="https://cdn.imweb.me/thumbnail/20221203/798c0a191bb6b.png" alt="">
+              </div>
+              <div class="carousel__item">
+                <img class="carousel__img" src="https://cdn.imweb.me/thumbnail/20221203/625a4c1a67d25.png" alt="">
+              </div>
+            </div>
+            <button class="carousel__control carousel__control--prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel__control carousel__control--next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="s3__description">
+            제주맥주는 맥주도 미식 세계의 주인공이 될 수 있다는 믿음으로,<br>
+            맥주로 경험할 수 있는 무한한 맛의 스펙트럼을 배럴 시리즈를 통해 보여드리고 있습니다.<br>
+            <br>
+            구하기 힘든 고가의 원료를 아낌없이 사용하고, 배럴 숙성을 비롯해 모든 공정을 브루마스터의 손을 거쳐야만 하기에<br>
+            긴 시간에 비해 생산되는 양은 소량이지만,<br>
+            <br>
+            <div class="s3__description--bold">
+              그럼에도 불구하고, 그 가치를 알아보고 일 년 동안 배럴 시리즈를<br>
+              손꼽아 기다리는 고객님들에게 선물 같은 맥주가 되길 바라는 마음을 담아 매년 선보이고 있습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COLLABORATION -->
+    <section class="section s4">
+      <div class="container">
+        <div class="head">
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221204/243e6977982b3.png" alt="">
+        </div>
+        <div class="body s4__article-list">
+          <div class="s4__article-item">
+            <div>
+              <img class="s4__logo" src="https://cdn.imweb.me/thumbnail/20221204/c7496a4672a07.png" alt="">
+              <p class="s4__description">
+                삐아프는 그 순간을 찬란히 빛낼 수 있는 초콜릿을 만드는 아티장 쇼콜라티에 입니다. <br>
+                <br>
+                제주맥주는 이번 배럴 시리즈의 테마 '달콤한 선물'을 위해<br>
+                삐아프와 함께 초콜릿을 닮은, 초콜릿을 담은 맥주를 선보입니다. <br>
+                <br>
+                제주맥주의 브루마스터와 삐아프의 쇼콜라티에가 서울과 제주를 수차례 오가며 연구한 끝에,<br>
+                삐아프의 시그니처 제품인 ‘더블 바닐라’를 재해석한<br>
+                <span class="s4__description--bold">
+                  제주맥주 배럴 시리즈 : 삐아프 아티장 쇼콜라티에 에디션이 탄생했습니다.
+                </span>
+              </p>
+            </div>
+            <div>
+              <img class="s4__img" src="https://cdn.imweb.me/thumbnail/20221204/47a34d1aa77b6.png" alt="">
+            </div>
+          </div>
+          <div class="s4__article-item">
+            <div>
+              <img class="s4__logo" src="https://cdn.imweb.me/thumbnail/20221204/0022a3d03c1b8.png" alt="">
+              <p class="s4__description">
+                제주맥주 배럴 시리즈 : 삐아프 아티장 쇼콜라티에 에디션은 <br>
+                배럴에 수개월간 숙성시킨 짙은 풍미의 임페리얼스타우트 원주에,<br>
+                타히티와 마다가스카르 바닐라빈과 카카오를 더하여, 부드러운 달콤함을 자아냅니다.<br>
+                <br>
+                타히티 바닐라빈이 만드는 화사하면서도 산뜻한 아로마와,<br>
+                마다가스카르 바닐라빈의 부드럽고 달달한 뉘앙스, 카카오의 달콤쌉싸름한 풍미가 하모니를 이룹니다.<br>
+                <br>
+                <span class="s4__description--bold">
+                  삐아프와 제주맥주가 전하는 달콤한 겨울 선물. 사랑하는 연인과 가족, 지인들과 더욱 특별하게 즐겨보세요.
+                </span>
+              </p>
+            </div>
+            <div>
+              <img class="s4__img" src="https://cdn.imweb.me/thumbnail/20221204/7ddeebfd51cee.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 어른들을 위한 달콤한 크리스마스 -->
+    <section class="section s5">
+      <div class="container">
+        <div class="head">
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221202/a6391c67cbd86.png" alt="">
+          <h2 class="head__title">어른들을 위한<br>달콤한 크리스마스</h2>
+          <img class='head__deco' src="https://cdn.imweb.me/thumbnail/20221202/a6391c67cbd86.png" alt="">
+        </div>
+        <div class="body s5__body">
+          <div class="slider">
+            <div class="slider__inner">
+              <img class="slider__item slider__item--visible"
+                src="https://cdn.imweb.me/thumbnail/20221204/86e044d09da23.png" alt="" data-idx="0">
+              <img class="slider__item" src="https://cdn.imweb.me/thumbnail/20221202/9dcea15b2539f.png" alt=""
+                data-idx="1">
+              <img class="slider__item" src="https://cdn.imweb.me/thumbnail/20221202/1884f09e76023.png" alt=""
+                data-idx="2">
+              <img class="slider__item" src="https://cdn.imweb.me/thumbnail/20221202/3fa9f4fe305f3.png" alt=""
+                data-idx="3">
+            </div>
+            <div class="slider__indicator-group">
+              <button class="slider__indicator slider__indicator--active" type="button"></button>
+              <button class="slider__indicator" type="button"></button>
+              <button class="slider__indicator" type="button"></button>
+              <button class="slider__indicator" type="button"></button>
+            </div>
+          </div>
+          <div class="reservation">
+            <div class="reservation__head">
+              <p class="reservation__title">제주맥주 배럴 시리즈: 삐아프 아티장 쇼콜라티에 에디션</p>
+              <p class="reservation__content">
+                제주맥주 배럴 시리즈는 제주맥주에 보내주신 애정에 대한 감사의 선물이자<br>
+                맥주가 주인공이 되는 미식 세계를 만들고자 하는 집념으로<br>
+                매년 단 한 차례 소량으로 선보이는 한정 제품입니다.
+              </p>
+            </div>
+            <div class="reservation__body">
+              <p class="reservation__info">
+                1차 예약: 종료
+              </p>
+              <p class="reservation__info">
+                2차 예약: 종료
+              </p>
+              <p class="reservation__info">
+                3차 예약: 종료
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="alarm">
+          <p class="alarm__title">
+            [ 제주맥주 배럴 시리즈는 돌아옵니다. ]
+          </p>
+          <p class="alarm__content">
+            예약이 종료되었습니다. 제주맥주 양조장/코너샵 외 추가 판매여부는 확정되어 있지 않습니다. <br>
+            알림 신청 또는 판매 희망지역을 남겨주시면, 추후 판매 재개 또는 추가 픽업 지역 오픈 시 반영됩니다.
+          </p>
+          <button type="button" class="btn btn--pill alarm__btn">
+            배럴 시리즈 소식 알림 신청하기
+            <div class="alarm__btn--subtext">+ 판매 희망 지역 신청 및 의견 남기기</div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Q & A -->
+    <section class="section s6">
+      <div class="container">
+        <div class="head">
+          <h2 class="head__title">Q & A</h2>
+        </div>
+        <div class="body">
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__head">
+                <span class="accordion__head--text">
+                  예약 후 대리인 수령이 가능한가요?
+                </span>
+                <span class="accordion__head--icon">
+                  ▼
+                </span>
+              </div>
+              <div class="accordion__body">
+                예약자 본인 명의의 신분증을 지참하시거나, 기타 방법을 통해 예약내역을 확인할 수 있는 경우에 한하여 대리 수령이 가능합니다.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__head">
+                <span class="accordion__head--text">
+                  다른 지역에서는 구매할 수 없나요?
+                </span>
+                <span class="accordion__head--icon">
+                  ▼
+                </span>
+              </div>
+              <div class="accordion__body">
+                많은 분들의 문의가 있어 추가 픽업처를 협의하고 있습니다. <br>
+                추가 픽업처 오픈을 희망하시는 지역을 남겨주시면, 반영하도록 하겠습니다.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__head">
+                <span class="accordion__head--text">
+                  제주도는 어떻게 구매할 수 있나요?
+                </span>
+                <span class="accordion__head--icon">
+                  ▼
+                </span>
+              </div>
+              <div class="accordion__body">
+                제주도의 경우, 제주맥주 양조장과 제주맥주 코너샵에서 별도의 예약없이, 방문구매가 가능합니다.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__head">
+                <span class="accordion__head--text">
+                  예약창 버튼이 눌리지 않아요.
+                </span>
+                <span class="accordion__head--icon">
+                  ▼
+                </span>
+              </div>
+              <div class="accordion__body">
+                제주맥주 배럴시리즈 : 삐아프 아티장 쇼콜라티에 에디션은 한정수량만 생산 판매되어, 정해진 시간에 정해진 수량만 예약이 오픈됩니다. 수량이 모두 소진되면 예약은 조기 종료될 수 있습니다.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__head">
+                <span class="accordion__head--text">
+                  사전 예약이면 픽업은 어떻게 하나요? 배송이 가능한가요?
+                </span>
+                <span class="accordion__head--icon">
+                  ▼
+                </span>
+              </div>
+              <div class="accordion__body">
+                제주맥주 배럴시리즈 : 삐아프 아티장 쇼콜라티에 에디션의 경우, 별도 배송을 운영하지 않으며, 신청하신 날짜에 픽업장소에 직접 방문하셔서 제품을 수령하셔야 합니다.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__head">
+                <span class="accordion__head--text">
+                  제품은 어디서 예약할 수 있나요?
+                </span>
+                <span class="accordion__head--icon">
+                  ▼
+                </span>
+              </div>
+              <div class="accordion__body">
+                제주맥주 배럴시리즈 : 삐아프 아티장 쇼콜라티에 에디션은 [배럴 시리즈 예약] 버튼을 통해 예약창으로 이동하실 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 이벤트 관련 유의사항 -->
+    <section class="section s7">
+      <div class="container">
+        <p class="s7__text">이벤트 관련 유의사항</p>
+        <p class="s7__text">
+          - 지나친 음주는 뇌졸증, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생 위험을 높입니다.
+        </p>
+        <p class="s7__text">
+          - 만 19세 이상 성인부터 제품 예약 및 이벤트 참여 가능합니다. (미성년자 자동 취소)
+        </p>
+        <p class="s7__text">
+          - 당첨자 발표는 개별 연락드리며, 따로 공지 되지 않는 점 양해 부탁드립니다.
+        </p>
+        <p class="s7__text">
+          - 당첨 연락 후 3일 이내로 미응답 시 당첨에서 제외됩니다.
+        </p>
+        <p class="s7__text">
+          - ‘개인정보 수집 및 이용’ 동의하셔야 이벤트 참여 가능합니다.
+        </p>
+        <p class="s7__text">
+          - 제주맥주 사전예약 시, 자동 응모되며, 노쇼 또는 제품 미수령시 당첨은 취소됩니다.
+        </p>
+        <p class="s7__text">
+          - 당첨자 발표 후 경품은 순차적으로 배송되며, 배송 기간은 그로부터 3-5일이 소요될 수 있습니다.
+        </p>
+        <p class="s7__text">
+          - 이벤트 경품은 제품 수급 사정에 따라 달라질 수 있습니다.
+        </p>
+        <p class="s7__text">
+          - 제세공과금이 발생할 경우 제주맥주가 부담하며, 당첨자에게는 “신분증 사본 (주민등록증, 운전면허증, 여권 등)”을 입력하신 연락처와 메일로 요청드릴 예정으로 요청 후 3일 이내 신분증 사본을
+          미제출 하실 경우 당첨에서 제외됩니다.
+        </p>
+        <p class="s7__text">
+          - 기타 문의사항이 있으시면, <span class="s7__text--bold">jejubeer@jejubeer.co.kr</span> 로 문의 바랍니다.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <!-- 푸터 상단 -->
+    <div class="footer__top">
+      <ul class="list-group footer__utility-group">
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">ABOUT US</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">OUR BEERS</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">NEWS</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">CONTACT</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">IR</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">이용약관</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">개인정보 처리방침</a>
+        </li>
+        <li class="list-group__item">
+          <a class="list-group__link footer__utility-link" href="#">영상정보 처리방침</a>
+        </li>
+      </ul>
+      <ul class="btn-group footer__sns-group">
+        <li class="btn-group__item">
+          <a class="btn-group__link footer__sns-link" href="#">
+            <img class="footer__sns-icon" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png"
+              alt="">
+          </a>
+        </li>
+        <li class="btn-group__item">
+          <a class="btn-group__link footer__sns-link" href="#">
+            <img class="footer__sns-icon" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png"
+              alt="">
+          </a>
+        </li>
+        <li class="btn-group__item">
+          <a class="btn-group__link footer__sns-link" href="#">
+            <img class="footer__sns-icon" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png"
+              alt="">
+          </a>
+        </li>
+        <li class="btn-group__item">
+          <a class="btn-group__link footer__sns-link" href="#">
+            <img class="footer__sns-icon" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png"
+              alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 푸터 하단 -->
+    <div class="footer__bottom">
+      <div class="footer__company-info">
+        <p>
+          제주맥주 주식회사
+          &nbsp;&nbsp;
+          대표이사 문혁기
+        </p>
+        <p>
+          본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11
+          &nbsp;&nbsp;
+          서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
+        </p>
+        <p>
+          호스팅 제공자 (주)아임웹
+          &nbsp;&nbsp;
+          사업자등록번호 616-86-27415
+          &nbsp;&nbsp;
+          통신판매업신고번호 제 2020-제주한림-0101 호
+        </p>
+        <p>고객센터 02-2235-5559, jejubeer@jejubeer.co.kr</p>
+      </div>
+      <div class="footer__copyright">
+        COPYRIGHT 2021@ JEJU BEER COMPANY
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
