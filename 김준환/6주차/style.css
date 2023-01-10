@@ -1,0 +1,307 @@
+/* CSS RESET 코드 (기본 속성 제거)
+
+http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*--------------------- custom css -------------------------*/
+/* 내비게이션바 전체 */
+navbar {
+  background-color: white;
+}
+/* 내비게이션바 상단 nav*/
+.navbar-top {
+  background-color: white;
+  padding: 30px 60px 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.logo-img {
+  display: flex;
+  justify-self: center;
+  width: 70px;
+  height: auto;
+}
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-ul {
+  display: flex;
+  justify-content: end;
+  margin: 15px 0 15px 0;
+}
+.login {
+  font-size: 14px;
+}
+.login li {
+  margin-left: 10px;
+}
+.nonalcohol {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.btn-red {
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  border-radius: 30px;
+  background-color: rgb(239, 133, 113);
+}
+.btn-blue {
+  margin-left: 15px;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  border-radius: 30px;
+  background-color: rgb(95, 199, 209);
+}
+
+/* 내비게이션바 하단 nav*/
+.navbar-bottom {
+  background-color: white;
+  padding: 20px 150px 20px 150px;
+}
+.navbar-bottom ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* 콘텐츠 */
+.red-bg {
+  z-index: -1;
+  background-image: url("https://img.freepik.com/free-photo/merry-christmas-red-background_1361-3542.jpg?w=2000&t=st=1673094091~exp=1673094691~hmac=dab1defcaea16f2bb7ace07e6f4f353b986257a4caecddd6e2000bc8011f81f0");
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  filter: brightness(70%);
+}
+.barrel-series-img {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.star-title {
+  margin: 150px 0 150px 0;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+.star-stripe {
+  width: 650px;
+}
+.red-content {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.carousel-img {
+  width: 550px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.carousel-right {
+  margin: 0px 100px 0px 100px;
+}
+.star-second-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 100px 0px 30px 0px;
+}
+.reserve-content {
+  font-size: 17px;
+  line-height: 170%;
+}
+.reserve-end {
+  color: #ffffff99;
+  font-size: 25px;
+  margin-top: 50px;
+  line-height: 200%;
+}
+.barrel-comeback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.alarm-btn {
+  color: rgb(148, 28, 18);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 800px;
+}
+.black-content {
+  color: white;
+  background-color: rgb(20, 10, 1);
+  margin: 200px 0 200px 0;
+  padding: 0px 180px 0px 180px;
+}
+.star-title-series {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.star-main-title {
+  width: 650px;
+  margin-top: 200px;
+}
+.card-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 355px;
+}
+.card-img {
+  width: 87%;
+  margin-bottom: 20px;
+}
+.card-content {
+  line-height: 170%;
+}
+.carousel-second {
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
+}
+.slide-img {
+  width: 500px;
+  margin: 0 10px 0 10px;
+}
