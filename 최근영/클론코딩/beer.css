@@ -1,0 +1,629 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ImcreSoojin";
+}
+
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar 영역 */
+
+.navbar {
+    width: 100%;
+    height: 13rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar__form {
+    width: 1200px;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 5rem;
+    position: relative;
+}
+
+/* 로고 사이즈 */
+
+/* .navbar__form__logo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.navbar__form__logo {
+    position: absolute;
+    width: 71px;
+    height: 94px;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+/* navbar menu틀 */
+
+.navbar__form__menu {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* navbar tab 메뉴들 */
+
+.navbar__form__menu__tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar__form__menu__tabs a {
+    font-size: 13px;
+    margin: 0 .5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar__form__menu__tabs a:hover {
+    color: #e5e7eb;
+}
+
+/* navbar tab 버튼들 */
+
+.navbar__form__menu__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.navbar__form__menu__buttons__buy {
+    border: none;
+    border-radius: 1rem;
+    padding: .3rem 1rem;
+    background-color: #ff7e6b;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar__form__menu__buttons__reservation {
+    border: none;
+    border-radius: 1rem;
+    padding: .3rem 1rem;
+    background-color: #1ecad3;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* navbar category */
+
+.navbar__category {
+    width: 1000px;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 7rem;
+}
+
+.navbar__category a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #55585b;
+    font-size: 15px;
+}
+
+.navbar__category a:hover {
+    color: #e5e7eb;
+}
+
+/* container 영역 */
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+/* 처음 div 영역 */
+
+.container__first {
+    width: 100%;
+    height: auto;
+}
+
+.container__first__img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* 두번째 div 영역 */
+
+.container__second {
+    width: 100%;
+    height: auto;
+    background-image: url(https://cdn.imweb.me/thumbnail/20221204/504994fac4894.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7rem;
+}
+
+.container__second__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 두번째 div 영역 헤더 */
+
+.container__second__form__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.container__second__form__header span {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.container__second__form__header img {
+    height: 65px;
+}
+
+/* 두번째 div 영역 바디 */
+
+.container__second__form__body {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__second__form__body__slider {
+    width: 40%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.container__second__form__body__slider img {
+    width: 100%;
+}
+
+.container__second__form__body__contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__second__form__body__contents hr {
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.container__second__form__body__contents__title {
+    font-size: 24px;
+    color: white;
+}
+
+.container__second__form__body__contents__intro {
+    font-size: 16px;
+    color: white;
+}
+
+.container__second__form__body__contents__buy {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 141, 122);
+    line-height: 3px;
+}
+
+/* 두번째 div 영역 footer */
+
+.container__second__form__footer {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__second__form__footer__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.container__second__form__footer__intro {
+    font-size: 18px;
+    color: white;
+}
+
+.container__second__form__footer__img {
+    margin: 2rem 0;
+    height: 70px;
+}
+
+.container__second__form__footer__img:hover {
+    cursor: pointer;
+}
+
+/* 세번째 div 영역 */
+
+.container__third {
+    width: 100%;
+    height: auto;
+    background-color: #160900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7rem;
+}
+
+/* 세번째 div 헤더부분 */
+
+.container__third__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.container__third__header img {
+    height: 65px;
+    margin-bottom: 2rem;
+}
+
+/* 세번쨰 div 헤더 아래 설명 */
+
+.container__third__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 3rem 0;
+}
+
+.container__third__info {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 세번쨰 div 내용 */
+
+.container__third__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__third__contents__list {
+    width: 400px;
+}
+
+.container__third__contents__list img {
+    height: 429px;
+}
+
+.container__third__contents__list p {
+    font-size: 16px;
+    color: white;
+    letter-spacing: -2px;
+    line-height: 2rem;
+    margin: 0;
+}
+
+/* 세번째 div 빈 공간 */
+.container__third__blank {
+    width: 1200px;
+    height: 100px;
+}
+
+/* 세번쨰 div 이미지 슬라이더 */
+
+.container__third__slider {
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.container__third__slider img {
+    height: 400px;
+    margin-left: 2rem;
+}
+
+/* 세번째 div 설명 */
+
+.container__third__detail {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(255, 234, 220);
+    font-weight: 400;
+    margin: 3rem 0;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+/* 네번쨰 div */
+
+.container__fourth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeadc;
+    padding-bottom: 1rem;
+}
+
+/* 네번째 div 헤더 */
+
+.container__fourth__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.container__fourth__header img {
+    height: 65px;
+    margin-bottom: 2rem;
+}
+
+/* 네번쨰 div 내용 */
+
+.container__fourth__contents {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+
+.container__fourth__contents__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container__fourth__contents__text__img1 {
+    width: 100px;
+    height: 64px;
+}
+
+.container__fourth__contents__text__img2 {
+    width: 72px;
+    height: 96px;
+}
+
+.container__fourth__contents__text p {
+    width: 100%;
+    color: rgb(160, 0, 0);
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.container__fourth__contents__text p:last-child {
+    font-weight: 700;
+}
+
+.container__fourth__contents__img {
+    height: 340px;
+}
+
+.container__fourth hr {
+    width: 1200px;
+    border-color: rgb(160, 0, 0);
+    border-top: .5px;
+}
+
+/* 다섯번쨰 div 영역 */
+
+.container__fifth {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://cdn.imweb.me/thumbnail/20221204/504994fac4894.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__fifth__form__body__contents__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__fifth__form__body__contents__buy {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 141, 122);
+    margin: 1rem 0;
+}
+
+.container__fifth__form__body__contents__buy:last-child {
+    padding-right: 10rem;
+}
+
+/* 여섯번째 div 영역 */
+
+.container__sixth {
+    width: 100%;
+    height: auto;
+    background-color: #ffeadc;
+    padding: 14rem 0;
+}
+
+.container__sixth__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.container__sixth__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__sixth__body hr {
+    width: 1200px;
+    border-top-color: black;
+}
+
+.container__sixth__body__content {
+    width: 1200px;
+}
+
+.container__sixth__body__content__title {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.container__sixth__body__content__title:hover {
+    cursor: pointer;
+}
+
+.container__sixth__body__content__title span {
+    padding-left: 1rem;
+}
+
+.container__sixth__body__content__title__down {
+    width: 18px;
+    padding-right: 1rem;
+}
+
+.container__sixth__body__content__title__up {
+    width: 18px;
+    padding-right: 1rem;
+    display: none;
+}
+
+.container__sixth__body__content__hide {
+    display: none;
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 0 2rem 0;
+    transition: all .3s;
+}
+
+.show {
+    display: block;
+    transition: all .3s;
+}
+
+.container__sixth__body__content__title span {
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+.container__sixth__body__content__hide p {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+.container__sixth__footer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container__sixth__footer__content {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__sixth__footer__content span {
+    line-height: 30px;
+    color: rgb(128, 128, 128);
+    letter-spacing: -1px;
+}
+
+/* footer 영역 */
+
+.footer__form {
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__form__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 0 0;
+}
+
+.footer__form__link a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    padding: 0 1.5rem;
+}
+
+.footer__form__link__imgs a {
+    padding: 0 0 0 1rem;
+}
+
+.footer__form__link__imgs a:last-child {
+    padding: 0 1rem;
+}
+
+.footer__form__link__imgs img {
+    height: 40px;
+}
+
+.footer__form__info {
+    padding-left: 1rem;
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+}
+
+.footer__form__info pre {
+    letter-spacing: -1px;
+    line-height: 8px;
+}
+
+.footer__form__info p {
+    padding-top: 1rem;
+    font-weight: 800;
+}
