@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANS</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- 네브바 -->
+  <nav>
+    <!-- 로고 -->
+    <div><img src="	http://hanscake.co.kr/front/images/common/logo1.gif" alt="hans-logo"></div>
+    <!-- 네브바 메뉴들 -->
+    <ul class="nav-menu">
+      <li class="nav-menu__item">
+        <span>taste</span>
+        <div class="nav-menu__drop-content">
+          <a href="">cake</a>
+          <a href="">sweet&drink</a>
+          <a href="">special orders</a>
+        </div>
+      </li>
+      <li class="nav-menu__item">
+        <span>store</span>
+        <div class="nav-menu__drop-content">
+          <a href="">space</a>
+          <a href="">store</a>
+          <a href="">be a family</a></li>
+      <li class="nav-menu__item">
+        <span>HANS Story</span>
+        <div class="nav-menu__drop-content">
+          <a href="">story</a>
+          <a href="">contact us</a></li>
+      <li class="nav-menu__item">
+        <span>news</span></li>
+    </ul>
+    <!-- 네브바 아이콘들 -->
+    <div class="nav__icon"><img src="http://hanscake.co.kr/front/images/common/btn-n2.png" alt="hans-cake"><img src="http://hanscake.co.kr/front/images/common/btn_06.gif" alt="insta"></div>
+  </nav>
+  <!-- 본문 -->
+  <div class="container">
+    <!-- 메인 배너 -->
+    <div class="main-banner">
+      <div class="main-banner__slides">
+        <!-- 라디오 버튼 -->
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- 배너 이미지들 -->
+        <div class="main-banner__slide main-banner__slide--img1 first">
+        </div>
+        <div class="main-banner__slide main-banner__slide--img2">
+        </div>
+        <div class="main-banner__slide main-banner__slide--img3">
+        </div>
+        <div class="main-banner__slide main-banner__slide--img4">
+        </div>
+        <!-- 라디오 버튼 라벨 -->
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn1"></label>
+          <label for="radio2" class="manual-btn2"></label>
+          <label for="radio3" class="manual-btn3"></label>
+          <label for="radio4" class="manual-btn4"></label>
+        </div>
+      </div>
+    </div>
+    <!-- 탭 메뉴 -->
+    <div class="banner-tab">
+      <p class="banner-tab__menu">Fresh HANS</p>
+      <p class="banner-tab__menu">New Arrivals</p>
+      <p class="banner-tab__menu">Love the moment</p>
+    </div>
+    <!--서브 배너 -->
+    <div class="sub-banner">
+        <!-- 이전 버튼 -->
+        <button class="sub-banner__pre-btn" id="previous">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <!--서브 배너 이미지들 -->
+        <div class="sub-banner__img">
+          <img src="http://hanscake.co.kr/upload/banner/20160512/ZdsbQLVeBaK81liO_20160512.png" alt="">
+          <img src="http://hanscake.co.kr/upload/banner/20160108/MgPsYmpyTVlNhLfC_20160108.png" alt="">
+          <img src="http://hanscake.co.kr/upload/banner/20160108/AXyTFiVOmK1sINrU_20160108.png" alt="">
+          <img src="http://hanscake.co.kr/upload/banner/20160108/o2EIKqm8DG6akRgA_20160108.png" alt="">
+        </div>
+        <!-- 다음 버튼 -->
+        <button class="sub-banner__next-btn" id="next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

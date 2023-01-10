@@ -1,0 +1,230 @@
+/* 방법론 : BEM */
+/* 작성방식 : 블록__내부요소--기능 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 8px rgb(74, 47, 47);
+  align-items: stretch;
+  padding: 1rem 5rem;
+}
+
+.nav-menu {
+  display: flex;
+  margin: 0;
+}
+
+.nav-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  background-color: white;
+}
+
+.nav-menu__item span {
+  font-size: 19px;
+  font-weight: 500;
+  padding: 0 2rem;
+}
+
+.nav__icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav__icon img {
+  margin: 6px;
+}
+
+.nav-menu__drop-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.nav-menu__drop-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 0;
+}
+
+.nav-menu__item:hover {
+  color: white;
+  background-color: rgb(237, 80, 41);
+}
+
+.nav-menu__item:hover .nav-menu__drop-content {
+  display: block;
+  background-color: rgb(237, 80, 41);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-banner {
+  width: 100vw;
+  height: 650px;
+  overflow: hidden;
+}
+
+.main-banner__slides {
+  width: 500%;
+  height: 650px;
+  display: flex;
+}
+
+.main-banner__slides input {
+  display: none;
+}
+
+.main-banner__slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.main-banner__slide img {
+  height: 650px;
+}
+
+.main-banner__slide--img1 {
+  background-image: url(http://hanscake.co.kr/upload/banner/20221202/6wepjzNG8nhDPbV4_20221202.jpg);
+  background-position: -40rem;
+}
+
+.main-banner__slide--img2 {
+  background-image: url(http://hanscake.co.kr/upload/banner/20160120/a9BNH4wf0XR8SOrt_20160120.jpg);
+  background-position: -40rem;
+}
+
+.main-banner__slide--img3 {
+  background-image: url(http://hanscake.co.kr/upload/banner/20160511/gUEvD7uzFqVHZ8mk_20160511.jpg);
+  background-position: -40rem;
+}
+
+.main-banner__slide--img4 {
+  background-image: url(http://hanscake.co.kr/upload/banner/20170428/TbKyX70DFcR4hpVk_20170428.jpg);
+  background-position: -40rem;
+}
+
+.nav-manual {
+  position: absolute;
+  width: 100%;
+  top: 650px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual label {
+  background-color: white;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 0 10px;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio1:checked ~ .nav-manual .manual-btn1 {
+  background-color: rgb(237, 80, 41);
+  width: 20px;
+}
+
+#radio2:checked ~ .nav-manual .manual-btn2 {
+  background-color: rgb(237, 80, 41);
+  width: 20px;
+}
+
+#radio3:checked ~ .nav-manual .manual-btn3 {
+  background-color: rgb(237, 80, 41);
+  width: 20px;
+}
+
+#radio4:checked ~ .nav-manual .manual-btn4 {
+  background-color: rgb(237, 80, 41);
+  width: 20px;
+}
+
+.banner-tab {
+  display: flex;
+  position: relative;
+  top: -55px;
+}
+
+.banner-tab__menu {
+  border: solid 5px rgb(237, 80, 41);
+  width: 320px;
+  padding: 4rem 0rem 2rem;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+.sub-banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1120px;
+  height: 650px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.sub-banner__img {
+  display: flex;
+  width: 1000px;
+  transform: translateX(0);
+  transition: transform 0.25s;
+}
+
+.sub-banner button {
+  background-color: transparent;
+  border: 0;
+  color: rgb(237, 80, 41);
+  cursor: pointer;
+  font-size: 60px;
+  z-index: 1;
+}
+
+.sub-banner__pre-btn {
+  left: 5px;
+}
+
+.sub-banner__next-btn {
+  right: 5px;
+}
