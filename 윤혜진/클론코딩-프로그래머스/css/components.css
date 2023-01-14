@@ -1,0 +1,20 @@
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+}
+
+/* list-group */
+.list-group {
+  display: flex;
+  align-items: center;
+}
+
+.list-group__item {
+  padding: 0 0.5rem;
+}
+
+.list-group__link {
+  color: black;
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html {
+  font-size: 0.85rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media screen and (min-width: 768px) {  /* 태블릿 크기 이상 */
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {  /* 데스크탑 크기 이상 */
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+/* header */
+header {
+  min-width: 320px;
+}
+
+.gnb {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb__logo {
+  margin-right: 2rem;
+}
+
+.logo__svg--large {
+  width: 10rem;
+}
+
+.logo__svg--small {
+  display: none;
+}
+
+.gnb__menu .list-group__link {
+  font-weight: 600;
+}
+
+.gnb__submenu .list-group__link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(121, 123, 121);
+}
+
+.gnb__submenu--small {
+  display: none;
+}
+
+.gnb__user {
+  display: flex;
+  align-items: center;
+}
+
+.gnb__user--small {
+  display: none;
+}
+
+.user__name {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: #0084ff;
+}
+
+.alarm-icon {
+  margin-right: 1rem;
+}
+
+.user__profile-img {
+  display: block;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.gnb__line {
+  height:1px;
+  border:0;
+  background-color: rgb(242, 242, 242);
+}
+
+.gnb__line--small {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .logo__svg--large {
+    display: none;
+  }
+
+  .logo__svg--small {
+    display: block;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .gnb__submenu--large {
+    display: none;
+  }
+
+  .gnb__submenu--small {
+    display: flex;
+    padding: 1rem 1.5rem;
+  }
+
+  .gnb__user--large {
+    display: none;
+  }
+
+  .gnb__user--small {
+    display: flex;
+  }
+
+  .alarm-icon {
+    font-size: 1.5rem;
+  }
+
+  .gnb__line--small {
+    display: block;
+  }
+}
