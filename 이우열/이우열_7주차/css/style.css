@@ -1,7 +1,19 @@
-body {
-  margin: 0;
+* {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1160px;
+  padding: 0 1.25rem;
+}
+
+/* 네비게이션 바 */
 
 .nav {
   width: 100%;
@@ -11,14 +23,10 @@ body {
 }
 
 .nav__container {
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 65px;
-  max-width: 1160px;
-  padding: 0 1.25rem;
 }
 
 .nav__logoTaps {
@@ -78,6 +86,8 @@ body {
   font-size: 18px;
 }
 
+/* 성장 여정 */
+
 .career {
   margin: 100px auto;
   width: 100%;
@@ -136,4 +146,233 @@ body {
   height: 100px;
   transform: translateY(-50%);
   z-index: 1;
+}
+
+/* 배너 1 */
+
+.banner__container {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.banner__box {
+  height: 15rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.box1 {
+  background-color: black;
+  color: white;
+}
+
+.banner__content {
+  width: 50%;
+}
+
+.banner__badge {
+  padding: 5px;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #6b6b6b3b;
+  border-radius: 0.3rem;
+}
+
+.content__info {
+  color: #ffffffab;
+}
+
+.banner__image {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.banner__pagination {
+  position: absolute;
+  bottom: 2rem;
+  left: 5rem;
+  color: white;
+}
+
+.pagination__divider {
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.8rem;
+  margin: 0 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination__currentPage {
+  font-weight: 600;
+}
+
+/* 강좌 */
+
+.course__container {
+  margin-bottom: 8rem;
+}
+
+.grid__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.watching__title {
+  display: flex;
+  align-items: center;
+}
+
+.watching__badge {
+  margin-left: 5px;
+  padding: 3px 8px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.course__box {
+  width: 100%;
+  height: 350px;
+  border-radius: 1rem;
+}
+
+.watching__box {
+  border: 1px solid #6b6b6b2f;
+}
+
+.recommend__list {
+  grid-column: span 2;
+}
+
+.recommend__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.recommend__box {
+  background-color: #0084ff;
+}
+
+/* 채용 공고 */
+
+.announce__box {
+  width: 100%;
+  height: 543px;
+  border-radius: 1rem;
+}
+
+.announce__banner {
+  /* a태그가 block이 아니면 높이를 안먹음 */
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.announce__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.announce__content {
+  padding: 2rem;
+  height: 300px;
+  border: 1px solid #6b6b6b2f;
+  border-top: 0px;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.announce__title {
+  margin: 0 0 2rem 0;
+}
+
+.content__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text {
+  margin: 8px 0;
+  display: inline-block;
+  width: 100px;
+}
+
+.content__badge {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #edf3fc;
+  border-radius: 5px;
+}
+
+.content__hr {
+  border: 0.5px solid #6b6b6b2f;
+}
+
+.content__subtext {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.content__button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.014);
+  border: 1px solid #6b6b6b2f;
+  border-radius: 5px;
+}
+
+.connect__announce {
+  grid-column: span 2;
+}
+
+.connect__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.connect__hr {
+  margin-bottom: 1.5rem;
+}
+
+.find__announce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 479px;
+  padding: 2rem;
+  border: 1px solid #6b6b6b2f;
+  border-radius: 1rem;
+}
+
+.find__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.find__image {
+  width: 100px;
+}
+
+.find__text {
+  color: #8babd0;
+  font-weight: 400;
 }

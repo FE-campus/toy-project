@@ -13,14 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- 네비게이션 바 -->
     <nav class="nav">
-      <div class="nav__container">
+      <div class="container nav__container">
         <!-- 로고, 탭 -->
         <div class="nav__logoTaps">
           <a href="#">
@@ -55,7 +55,7 @@
     </nav>
 
     <!-- 성장 여정 -->
-    <div class="career">
+    <div class="container career">
       <h1 class="career__title">
         <span class="career__titleUser">w00ye0l님</span>의 성장 여정이에요.
       </h1>
@@ -99,6 +99,128 @@
           </div>
           <img class="box__image" src="./images/cv.png" alt="" />
         </a>
+      </div>
+    </div>
+
+    <!-- 배너 1 -->
+    <div class="container banner__container">
+      <div class="banner__box box1">
+        <div class="banner__content">
+          <div class="banner__badge">프로그래머스x고용노동부</div>
+          <h2>전문적인 교육을 통해<br />개발자로 성장하는 시간</h2>
+          <p class="content__info">
+            신규 과정이 추가 되었어요! 알림 신청을 미리 받아보세요.
+          </p>
+        </div>
+        <img class="banner__image" src="./images/banner1.png" alt="" />
+      </div>
+
+      <div class="banner__pagination">
+        <i class="pagination__left bi bi-chevron-left"></i>
+        <span class="pagination__currentPage">01</span>
+        <span class="pagination__divider"></span>
+        <span class="pagination__totalPage">06</span>
+        <i class="pagination__right bi bi-chevron-right"></i>
+      </div>
+    </div>
+
+    <!-- 강좌 -->
+    <div class="container course__container">
+      <h2>클린 코드 비법을 알려 줄게요.</h2>
+
+      <div class="grid__list course__list">
+        <div class="watching__list">
+          <h3 class="watching__title">
+            수강 현황 <span class="watching__badge">4</span>
+          </h3>
+          <div class="course__box watching__box">
+            <div></div>
+          </div>
+        </div>
+
+        <div class="recommend__list">
+          <h3>추천 강의<i class="bi bi-chevron-right"></i></h3>
+          <div class="recommend__container">
+            <div class="course__box recommend__box"></div>
+            <div class="course__box recommend__box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 채용 공고 -->
+    <div class="container announce__container">
+      <h2>잘나가는 개발자가 되어보세요.</h2>
+
+      <div class="grid__list announce__list">
+        <div class="take__announce">
+          <h3>내가 접수한 채용 프로그램<i class="bi bi-chevron-right"></i></h3>
+          <div class="announce__box">
+            <a class="announce__banner" href="">
+              <img class="announce__image" src="./images/take1.jpg" alt="" />
+            </a>
+
+            <div class="announce__content">
+              <h3 class="announce__title">
+                2022 Dev-Matching: 웹 프론트엔드 개발자(하반기)-2
+              </h3>
+              <div class="content__text">
+                <span class="text">지원한 포지션</span>
+                <span class="content__badge">10개</span>
+              </div>
+              <div class="content__text">
+                <span class="text">지원상태</span>
+                <span class="content__badge">불합격</span>
+              </div>
+              <hr class="content__hr" />
+              <span class="content__text">시험일</span>
+              <p class="content__subtext">
+                22-11-13(일) 13:00 ~ 22-11-13(일) 17:00
+              </p>
+              <button class="content__button" disabled>종료</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="connect__announce">
+          <h3>진행중인 채용 프로그램<i class="bi bi-chevron-right"></i></h3>
+          <div class="connect__container">
+            <div class="announce__box">
+              <a class="announce__banner" href="" class="connect__banner">
+                <img
+                  class="announce__image"
+                  src="./images/connect1.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="announce__content">
+                <h3 class="announce__title">
+                  2023 Spring Coding - 스타트업 인턴 프로그램
+                </h3>
+                <hr class="content__hr connect__hr" />
+                <span class="content__text">접수일</span>
+                <p class="content__subtext">
+                  23-01-16(월) 11:00 ~ 23-02-09(목) 17:00
+                </p>
+                <span class="content__text">시험일</span>
+                <p class="content__subtext">
+                  23-02-11(토) 10:00 ~ 23-02-11(토) 12:00
+                </p>
+                <button class="content__button">프로그램 참여하기</button>
+              </div>
+            </div>
+
+            <div class="find__announce">
+              <div class="find__content">
+                <img class="find__image" src="./images/block.png" alt="" />
+                <h4 class="find__text">
+                  프로그래머스만의 <br />특별한 채용 프로그램에 참여해보세요!
+                </h4>
+              </div>
+              <button class="content__button">포지션 찾아보기</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/script.js"></script>
