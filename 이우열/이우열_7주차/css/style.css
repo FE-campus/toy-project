@@ -6,6 +6,8 @@ body {
 .nav {
   width: 100%;
   border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  word-break: keep-all;
+  width: 100%;
 }
 
 .nav__container {
@@ -67,10 +69,71 @@ body {
 .userAlarm__user {
   margin: 0;
   margin-right: 10px;
+  font-size: 0.9rem;
   font-weight: 300;
   color: #0084ff;
 }
 
 .userAlarm__alarm {
   font-size: 18px;
+}
+
+.career {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1160px;
+  padding: 0 1.25rem;
+}
+
+.career__title {
+  margin-bottom: 30px;
+}
+
+.career__titleUser {
+  color: #0059ff;
+}
+
+.career__container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.career__link {
+  position: relative;
+  background-color: #eef6ff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.career__box {
+  position: relative;
+  z-index: 10;
+}
+
+.box__title {
+  margin: 0 0 10px 0;
+  color: #0084ff;
+}
+
+.box__content {
+  margin: 0;
+  color: black;
+}
+
+.content__score {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.box__image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  transform: translateY(-50%);
+  z-index: 1;
 }
