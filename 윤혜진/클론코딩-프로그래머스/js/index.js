@@ -1,45 +1,3 @@
-// 무한 슬라이드
-// 성장 여정
-
-
-
-// // 첫번째와 마지막 슬라이드를 복제해 앞뒤로 붙여놓기 
-// const makeClone = function (slideList) {
-//   const clonedFirstSlide = slideList.firstElementChild.cloneNode(true);
-//   const clonedLastSlide = slideList.lastElementChild.cloneNode(true);
-//   slideList.append(clonedFirstSlide)
-//   slideList.insertBefore(clonedLastSlide, slideList.firstElementChild)
-// }
-
-
-// // 슬라이드 초기화
-// const slideInit = function (slideList) {
-//   slideList.style.marginLeft = `-${100 * 1}%`
-//   slideList.style.transition = `0s all`;
-// }
-
-
-// // 다음 슬라이드로 이동
-// const moveSlide = function (slideList, currentIdx) {
-//   // 슬라이드 이동
-//   slideList.style.marginLeft = `-${100 * (currentIdx + 2)}%`;
-//   slideList.style.transition = `1s all`;
-
-//   // 마지막 슬라이드일 경우, 복사한 첫번째 슬라이드에서 진짜 첫번째 위치로 이동
-//   if (currentIdx === totSlidePages - 1) {
-//     // 마지막 슬라이드 이동 1초 후, 첫번째 위치로 이동
-//     setTimeout(function () {
-//       slideList.style.marginLeft = `-${100 * 1}%`;
-//       slideList.style.transition = `0s all`;
-//     }, 1000)
-//     // 슬라이드 인덱스 초기화
-//     currentIdx = -1;
-//   }
-
-//   // 다음 슬라이드 인덱스 지정
-//   currentIdx += 1;
-// }
-
 class Slide {
   constructor(slideList, prevBtns, nextBtns, playInfinite = false) {
     this.currentIdx = 0;  // 현재 슬라이드 인덱스
@@ -227,51 +185,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const growthJourneyNextBtns = growthJourneySection.querySelectorAll('.slide__next-btn')
 
   const growthJourneySlide = new Slide(growthJourneySlideList, growthJourneyPrevBtns, growthJourneyNextBtns, playInfinite = true);
-  // growthJourneySlide.makeClone();
-  // growthJourneySlide.slideInit();
-  // let infiniteSlide = setInterval((control) => growthJourneySlide.moveSlide(control), 3000, 'next');  // 무한 슬라이드
 
-
-  // growthJourneyPrevBtns.forEach(function (growthJourneyPrevBtn) {   // '이전' 버튼 클릭 시
-  //   growthJourneyPrevBtn.addEventListener('click', function () {
-  //     clearInterval(infiniteSlide);  // 무한 슬라이드 중단
-  //     growthJourneySlide.moveSlide('prev');
-  //     infiniteSlide = setInterval((control) => growthJourneySlide.moveSlide(control), 3000, 'next');  // 무한 슬라이드 재개
-  //   })
-  // })
-  // growthJourneyNextBtns.forEach(function (growthJourneyNextBtn) {   // '다음' 버튼 클릭 시
-  //   growthJourneyNextBtn.addEventListener('click', function () {
-  //     clearInterval(infiniteSlide);   // 무한 슬라이드 중단
-  //     growthJourneySlide.moveSlide('next');
-  //     infiniteSlide = setInterval((control) => growthJourneySlide.moveSlide(control), 3000, 'next');   // 무한 슬라이드 재개
-  //   })
-  // })
-
-  // 위 무한 슬라이드 실행하는 메서드 추가
-  // 위 버튼 클릭 시 슬라이드 이동하는 것도 메서드화 하기
 
   // 2) 'clean-code' section
   // 2-1) 'course-statement' subsection 슬라이드
-  // const courseStatementSubsection = document.querySelector('.course-statement')
-  // const courseStatementSlideContainer = courseStatementSubsection.querySelector('.slide')
-
-  // 슬라이드 박스를 호버했을 때, 이전/이후 슬라이드가 있을 경우에만 버튼이 나타나게
-  // courseStatementSlideContainer.addEventListener('mouseover', function (event) {
-  //   const courseStatementSlideList = event.currentTarget.querySelector('.slide__list')
-  //   const courseStatementPrevBtns = event.currentTarget.querySelectorAll('.slide__prev-btn')
-  //   const courseStatementNextBtns = event.currentTarget.querySelectorAll('.slide__next-btn')
-
-  //   const courseStatementSlide = new Slide(courseStatementSlideList);
-
-  //   if (courseStatementSlide.currentIdx - 1 >= 0) {
-  //     courseStatementPrevBtn.style.display = 'block';
-  //   }
-  //   if (courseStatementSlide.currentIdx + 1 < courseStatementSlide.totSlidePages) {
-  //     courseStatementNextBtn.style.display = 'block';
-  //   }
-  // })
-
-
   const courseStatementSubsection = document.querySelector('.course-statement')
   const courseStatementSlideList = courseStatementSubsection.querySelector('.slide__list')
   const courseStatementPrevBtns = courseStatementSubsection.querySelectorAll('.slide__prev-btn')
@@ -279,7 +196,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const courseStatementSlide = new Slide(courseStatementSlideList, courseStatementPrevBtns, courseStatementNextBtns);
   displayControlBtns(courseStatementSlideList, courseStatementSlide);
-
 
   // 2-2) 'recommend-lecture' subsection 슬라이드
   const recommendLectureSubsection = document.querySelector('.recommend-lecture')
