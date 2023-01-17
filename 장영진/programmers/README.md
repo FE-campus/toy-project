@@ -4,6 +4,16 @@
 
 컴포넌트별 구현, state, props 전송 등 다양한 기술들을 연습할 수 있는 좋은 기회였습니다.
 
+![클론코딩](README.assets/클론코딩.gif)
+
+<br>
+
+## 프로젝트 구조
+
+![DOM구조](README.assets/DOM구조.jpg)
+
+> 최상단 `App.js`컴포넌트에 userName을 관리하는 state생성 후 하위 컴포넌트 `Header.js` `Contents.js -> Dashboard.js`로 props 전송
+
 <br>
 
 ## 학습내용
