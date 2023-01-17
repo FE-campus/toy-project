@@ -604,6 +604,10 @@ header {
 }
 
 /* 잘나가는 개발자 */
+.section__body--fst, .section__body--sec {
+  margin-bottom: 3rem;
+}
+
 /* 1) 내가 접수한 채용 프로그램 */
 .applied-recruitment-program .slide {
   position: relative;
@@ -841,4 +845,223 @@ header {
     padding-right: 0.5rem;
     width: calc(100% / 2);
   }
+}
+
+/* 3) 다른 개발자들이 많이 지원한 포지션 */
+.section__body--snd {
+  display: block;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.others-applied-position .slide {
+  position: relative;
+  width: 100%;
+}
+
+.others-applied-position .slide__list {
+  width: 200%;
+}
+
+.others-applied-position .slide__inner {
+  padding-right: 1rem;
+  width: calc(200% / 6);
+}
+
+.others-applied-position .slide__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 15rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.others-applied-position .slide__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.others-applied-position .slide__img {
+  margin-right: 1rem;
+  width: 5rem;
+}
+
+.others-applied-position .slide__subtitle {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.others-applied-position .slide__title {
+  font-weight: 700;
+}
+
+.others-applied-position .slide__title--gray {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.others-applied-position .slide__conditions {
+  display: flex;
+  border-top: 1px solid rgb(215, 226, 235);
+}
+
+.others-applied-position .slide__condition {  
+  padding-top: 1rem;
+  width: 50%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.others-applied-position .slide__condition:first-child {
+  border-right: 1px solid rgb(215, 226, 235);
+}
+
+.others-applied-position .slide__condition--gray {
+  margin-bottom: 0.3rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.others-applied-position .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.others-applied-position .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.others-applied-position .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.others-applied-position .slide__next-btn {
+  position: absolute;
+  right: 1rem;
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .others-applied-position .slide__list {
+    width: calc(100% * 3);
+
+  }
+  
+  .others-applied-position .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 6);
+  }
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .others-applied-position .slide__list {
+    width: calc(100% * 6);
+
+  }
+  
+  .others-applied-position .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 6);
+  }
+}
+
+/* 4) 내가 지원한 포지션 */
+.section__body--trd {
+  display: block;
+  width: 100%;
+}
+
+.my-applied-position .slide {
+  position: relative;
+}
+
+.my-applied-position .slide__list {
+  width: calc(100% * 1);
+}
+
+.my-applied-position .slide__inner {
+  width: calc(100% / 1);
+}
+
+.my-applied-position .slide__item {
+  padding: 1.5rem;
+  height: 15rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.my-applied-position .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.my-applied-position .slide__img {
+  width: 6rem;
+}
+
+.my-applied-position .slide__content {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.my-applied-position .btn-group {
+  flex-direction: column;
+  justify-content: end;
+  height: 20%;
+}
+
+.my-applied-position .btn-group__item {
+  width: 100%;
+}
+
+.my-applied-position .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.my-applied-position .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.my-applied-position .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.my-applied-position .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.my-applied-position .slide__next-btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
 }

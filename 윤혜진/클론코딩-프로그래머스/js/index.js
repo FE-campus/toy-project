@@ -289,4 +289,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const recommendLectureSlide = new Slide(recommendLectureSlideList, recommendLecturePrevBtns, recommendLectureNextBtns);
   displayControlBtns(recommendLectureSlideList, recommendLectureSlide);
+
+
+  // 3) 'good-developer' section
+  // 3-3) 'others-applied-position' subsection 슬라이드
+  const othersAppliedPositionSubsection = document.querySelector('.others-applied-position')
+  const othersAppliedPositionSlideList = othersAppliedPositionSubsection.querySelector('.slide__list')
+  const othersAppliedPositionPrevBtns = othersAppliedPositionSubsection.querySelectorAll('.slide__prev-btn')
+  const othersAppliedPositionNextBtns = othersAppliedPositionSubsection.querySelectorAll('.slide__next-btn')
+
+  const othersAppliedPositionSlide = new Slide(othersAppliedPositionSlideList, othersAppliedPositionPrevBtns, othersAppliedPositionNextBtns);
+  displayControlBtns(othersAppliedPositionSlideList, othersAppliedPositionSlide);
 })
