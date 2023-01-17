@@ -602,3 +602,243 @@ header {
     width: calc(100% / 10);
   }
 }
+
+/* 잘나가는 개발자 */
+/* 1) 내가 접수한 채용 프로그램 */
+.applied-recruitment-program .slide {
+  position: relative;
+}
+
+.applied-recruitment-program .slide__list {
+  width: calc(100% * 1);
+}
+
+.applied-recruitment-program .slide__inner {
+  width: calc(100% / 1);
+}
+
+.applied-recruitment-program .slide__item {
+  padding: 1.5rem;
+  height: 27rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.applied-recruitment-program .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.applied-recruitment-program .slide__img {
+  width: 6rem;
+}
+
+.applied-recruitment-program .slide__content {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.applied-recruitment-program .btn-group {
+  flex-direction: column;
+  justify-content: end;
+  height: 20%;
+}
+
+.applied-recruitment-program .btn-group__item {
+  width: 100%;
+}
+
+.applied-recruitment-program .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.applied-recruitment-program .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.applied-recruitment-program .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.applied-recruitment-program .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.applied-recruitment-program .slide__next-btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* 2) 진행 중인 채용 프로그램 */
+.ongoing-recruitment-program .slide {
+  position: relative;
+  width: 100%;
+}
+
+.ongoing-recruitment-program .slide__list {
+  width: calc(50% * 2);
+}
+
+.ongoing-recruitment-program .slide__inner {
+  padding-right: 1rem;
+  width: calc(100% / 2);
+}
+
+.ongoing-recruitment-program .slide__item {
+  position: relative;
+  height: 27rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__img {
+  width: 100%;
+  height: 40%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 60%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(215, 226, 235);
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__content {
+  font-size: 0.7rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__content p {
+  margin-bottom: 0.8rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__content--bold {
+  font-weight: 800;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .btn-group__item {
+  width: 100%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__item {
+  padding: 1.5rem;
+  height: 27rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__img {
+  width: 6rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__content {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .btn-group {
+  flex-direction: column;
+  justify-content: end;
+  height: 20%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .btn-group__item {
+  width: 100%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.ongoing-recruitment-program .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.ongoing-recruitment-program .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.ongoing-recruitment-program .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.ongoing-recruitment-program .slide__next-btn {
+  position: absolute;
+  right: 1rem;
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .section__body--fst {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .ongoing-recruitment-program .slide__list {
+    width: calc(100% * 2);
+
+  }
+  
+  .ongoing-recruitment-program .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 2);
+  }
+}
