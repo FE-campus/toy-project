@@ -1065,3 +1065,54 @@ header {
   right: 0;
   transform: translateX(50%);
 }
+
+/* ---------- footer ---------- */
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer__top {
+  margin-bottom: 3rem;
+}
+
+.utility__group {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.utility__item {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.utility__title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.utility__content {
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.footer__bottom {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.company-info__title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.company-info__content {
+  line-height: 0.8rem;
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .utility__group {
+    display: block;
+  }  
+}
