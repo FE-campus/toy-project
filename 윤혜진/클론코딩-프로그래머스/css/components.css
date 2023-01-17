@@ -18,3 +18,74 @@
 .list-group__link {
   color: black;
 }
+
+/* slide */
+.slide__box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide__list {
+  display: flex;
+  width: calc(100% * 8);
+}
+
+.slide__inner {
+  width: calc(100% / 8);
+}
+
+/* .slide__box input[type='radio'] {
+  display: none;
+}
+
+.slide__box input[type='radio']:nth-child(1):checked ~ .slide__list {
+  margin-left: 0;
+}
+
+.slide__box input[type='radio']:nth-child(2):checked ~ .slide__list {
+  margin-left: -100%;
+}
+
+.slide__box input[type='radio']:nth-child(3):checked ~ .slide__list {
+  margin-left: -200%;
+}
+
+.slide__box input[type='radio']:nth-child(4):checked ~ .slide__list {
+  margin-left: -300%;
+}
+
+.slide__box input[type='radio']:nth-child(5):checked ~ .slide__list {
+  margin-left: -400%;
+}
+
+.slide__box input[type='radio']:nth-child(6):checked ~ .slide__list {
+  margin-left: -500%;
+} */
+
+/* button group */
+.btn-group {
+  display: flex;
+}
+
+.btn-group__item {
+  margin-right: 0.5rem;
+}
+
+.btn-group__item:last-of-type {
+  margin-right: 0;
+}
+
+.btn-group__link {
+  display: block;
+  padding: 0.5rem 0;
+  border: 1px solid rgb(13, 95, 255);
+  border-radius: 0.3rem;
+  background-color: rgb(13, 95, 255);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-group__link--pill {
+  border-radius: 1.5rem;
+}
