@@ -1,0 +1,1118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html {
+  font-size: 0.85rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media screen and (min-width: 768px) {  /* 태블릿 크기 이상 */
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {  /* 데스크탑 크기 이상 */
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+/* ---------- header ---------- */
+
+header {
+  min-width: 320px;
+}
+
+.gnb {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb__logo {
+  margin-right: 2rem;
+}
+
+.logo__svg--large {
+  width: 10rem;
+}
+
+.logo__svg--small {
+  display: none;
+}
+
+.gnb__menu .list-group__link {
+  font-weight: 600;
+}
+
+.gnb__submenu .list-group__link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(121, 123, 121);
+}
+
+.gnb__submenu--small {
+  display: none;
+}
+
+.gnb__user {
+  display: flex;
+  align-items: center;
+}
+
+.gnb__user--small {
+  display: none;
+}
+
+.user__name {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: #0084ff;
+}
+
+.alarm-icon {
+  margin-right: 1rem;
+}
+
+.user__profile-img {
+  display: block;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.gnb__line {
+  height:1px;
+  border:0;
+  background-color: rgb(242, 242, 242);
+}
+
+.gnb__line--small {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .logo__svg--large {
+    display: none;
+  }
+
+  .logo__svg--small {
+    display: block;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .gnb__submenu--large {
+    display: none;
+  }
+
+  .gnb__submenu--small {
+    display: flex;
+    padding: 1rem 1.5rem;
+  }
+
+  .gnb__user--large {
+    display: none;
+  }
+
+  .gnb__user--small {
+    display: flex;
+  }
+
+  .alarm-icon {
+    font-size: 1.5rem;
+  }
+
+  .gnb__line--small {
+    display: block;
+  }
+}
+
+/* ---------- main ---------- */
+
+/* 공통 요소 */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section__head {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.section__head--blue {
+  color: rgb(0, 120, 255);
+}
+
+.section__body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  /* display: flex; */
+}
+
+.subsection__head {
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .section__head--paragraph {
+    display: block;
+    line-height: 2.5rem;
+  }  
+
+  .separate-line {
+    width: 100%;
+    height: 1rem;
+    background-color: rgb(239, 239, 239);
+  }
+
+  .section__body {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 성장 여정 */
+.growth-journey .card__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.growth-journey .card__item {
+  position: relative;
+  padding: 1.8rem;
+  border-radius: 0.5rem;
+  background-color: rgb(238, 246, 255);
+}
+
+.growth-journey .card__img {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  z-index: 1;
+  width: 5rem;
+  transform: translateY(-50%);
+}
+
+.growth-journey .card__title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1rem;
+  color: #0084ff;
+}
+
+.growth-journey .card__content {
+  position: relative;
+  z-index: 2;
+}
+
+.growth-journey .card__content--large {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.growth-journey .slide__list {
+  width: calc(100% * 8);
+}
+
+.growth-journey .slide__inner {
+  padding: 0 0.5rem;
+  width: calc(100% / 8);
+}
+
+.growth-journey .slide__item {
+  position: relative;
+  padding: 1.5rem 3rem;
+  height: 15rem;
+  border-radius: 1rem;
+  color: white;
+  overflow: hidden;
+}
+
+.growth-journey .slide__inner:nth-child(1) .slide__item {
+  background-color: rgb(135, 116, 255);
+}
+
+.growth-journey .slide__inner:nth-child(2) .slide__item {
+  background-color: black;
+}
+
+.growth-journey .slide__inner:nth-child(3) .slide__item {
+  background-color: rgb(79, 195, 247);
+}
+
+.growth-journey .slide__inner:nth-child(4) .slide__item {
+  background-color: rgb(255, 202, 16);
+}
+
+.growth-journey .slide__inner:nth-child(5) .slide__item {
+  background-color: rgb(25, 37, 133);
+}
+
+.growth-journey .slide__inner:nth-child(6) .slide__item {
+  background-color: rgb(191, 108, 220);
+}
+
+.growth-journey .slide__inner:nth-child(7) .slide__item {
+  background-color: rgb(135, 116, 255);
+}
+
+.growth-journey .slide__inner:nth-child(8) .slide__item {
+  background-color: black;
+}
+
+.growth-journey .slide__img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40rem;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.growth-journey .slide__description {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.growth-journey .slide__subtitle {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(32, 43, 61, 0.37);
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.growth-journey .slide__title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
+
+.growth-journey .slide__content {
+  opacity: 0.7;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.growth-journey .slide__controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.growth-journey .slide__btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.growth-journey .slide__page {
+  display: inline-block;
+  padding: 0 0.8rem;
+}
+
+.growth-journey .slide__page--current {
+  border-right: 1px solid rgba(255, 255, 255, 0.308);
+  font-weight: 900;
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .growth-journey .card__item {
+    padding: 1.5rem 1rem;
+  }
+
+  .growth-journey .card__img {
+    width: 4rem;
+  }
+
+  .growth-journey .card__title, .growth-journey .card__content {
+    font-size: 0.9rem;
+  }  
+
+  .growth-journey .slide__img {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .growth-journey .card__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .growth-journey .slide__img {
+    bottom: 0;
+    right: -5rem;
+    width: 20rem;
+    transform: none;
+  }
+
+  .growth-journey .slide__title {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* 클린 코드 비법 */ 
+/* 1) 수강 현황 */
+.course-statement .slide {
+  position: relative;
+}
+
+.course-statement .slide__list {
+  width: calc(100% * 1);
+}
+
+.course-statement .slide__inner {
+  width: calc(100% / 1);
+}
+
+.course-statement .slide__item {
+  position: relative;
+  padding: 1.5rem;
+  height: 18rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.course-statement .slide__img {
+  position: absolute;
+  right: 2rem;
+  top: 40%;
+  width: 6rem;
+  transform: translateY(-50%);
+}
+
+.course-statement .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.course-statement .slide__title {
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+.course-statement .slide__content {
+  margin-bottom: 1rem;
+  color: rgb(150, 150, 150);
+  line-height: 1.3rem;
+}
+
+.course-statement .btn-group__item {
+  width: 100%;
+}
+
+.course-statement .btn-group__item:nth-of-type(1) .btn-group__link {
+  border: 1px solid black;
+  background-color: black;
+  font-size: 0.8rem;
+}
+
+.course-statement .btn-group__item:nth-of-type(2) .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.course-statement .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.course-statement .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.course-statement .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.course-statement .slide__next-btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .course-statement .btn-group__link {
+    font-size: 0.5rem;
+  }
+}
+
+/* 2) 추천 강의 */
+.recommend-lecture .slide {
+  position: relative;
+  width: 100%;
+  /* width: 635.75px; */
+}
+
+.recommend-lecture .slide__list {
+  width: calc(50% * 10);
+  /* width: 500%; */
+  /* width: calc(635.75px * 5); */
+  /* width: 3178.75px; */
+}
+
+.recommend-lecture .slide__inner {
+  padding-right: 1rem;
+  width: calc(100% / 10);
+  /* width: 10%; */
+  /* width: calc(635.75px / 2); */
+  /* width: 317.875px; */
+}
+
+.recommend-lecture .slide__item {
+  position: relative;
+  height: 18rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(9, 183, 193);
+}
+
+.recommend-lecture .slide__inner:nth-child(1) .slide__item {
+  background-color: rgb(9, 183, 193);
+}
+
+.recommend-lecture .slide__inner:nth-child(2) .slide__item {
+  background-color: rgb(0, 105, 211);
+}
+
+.recommend-lecture .slide__img {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  width: 5rem;
+  transform: translateY(-50%);
+}
+
+.recommend-lecture .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.recommend-lecture .slide__title {
+  font-weight: 700;
+  color: white;
+  line-height: 1.3rem;
+}
+
+.recommend-lecture .slide__content {
+  margin-bottom: 1rem;
+  color: white;
+  line-height: 1.3rem;
+}
+
+.recommend-lecture .btn-group__item {
+  width: 100%;
+}
+
+.recommend-lecture .btn-group__link {
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.recommend-lecture .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.recommend-lecture .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.recommend-lecture .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.recommend-lecture .slide__next-btn {
+  position: absolute;
+  right: 1rem;
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .recommend-lecture .slide__list {
+    width: calc(100% * 10);
+
+  }
+  
+  .recommend-lecture .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 10);
+  }
+}
+
+/* 잘나가는 개발자 */
+.section__body--fst, .section__body--sec {
+  margin-bottom: 3rem;
+}
+
+/* 1) 내가 접수한 채용 프로그램 */
+.applied-recruitment-program .slide {
+  position: relative;
+}
+
+.applied-recruitment-program .slide__list {
+  width: calc(100% * 1);
+}
+
+.applied-recruitment-program .slide__inner {
+  width: calc(100% / 1);
+}
+
+.applied-recruitment-program .slide__item {
+  padding: 1.5rem;
+  height: 27rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.applied-recruitment-program .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.applied-recruitment-program .slide__img {
+  width: 6rem;
+}
+
+.applied-recruitment-program .slide__content {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.applied-recruitment-program .btn-group {
+  flex-direction: column;
+  justify-content: end;
+  height: 20%;
+}
+
+.applied-recruitment-program .btn-group__item {
+  width: 100%;
+}
+
+.applied-recruitment-program .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.applied-recruitment-program .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.applied-recruitment-program .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.applied-recruitment-program .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.applied-recruitment-program .slide__next-btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* 2) 진행 중인 채용 프로그램 */
+.ongoing-recruitment-program .slide {
+  position: relative;
+  width: 100%;
+}
+
+.ongoing-recruitment-program .slide__list {
+  width: calc(50% * 2);
+}
+
+.ongoing-recruitment-program .slide__inner {
+  padding-right: 1rem;
+  width: calc(100% / 2);
+}
+
+.ongoing-recruitment-program .slide__item {
+  position: relative;
+  height: 27rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__img {
+  width: 100%;
+  height: 40%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 60%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(215, 226, 235);
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__content {
+  font-size: 0.7rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__content p {
+  margin-bottom: 0.8rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .slide__content--bold {
+  font-weight: 800;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .btn-group__item {
+  width: 100%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(1) .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__item {
+  padding: 1.5rem;
+  height: 27rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__img {
+  width: 6rem;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .slide__content {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .btn-group {
+  flex-direction: column;
+  justify-content: end;
+  height: 20%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .btn-group__item {
+  width: 100%;
+}
+
+.ongoing-recruitment-program .slide__inner:nth-child(2) .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.ongoing-recruitment-program .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.ongoing-recruitment-program .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.ongoing-recruitment-program .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.ongoing-recruitment-program .slide__next-btn {
+  position: absolute;
+  right: 1rem;
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .section__body--fst {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .ongoing-recruitment-program .slide__list {
+    width: calc(100% * 2);
+
+  }
+  
+  .ongoing-recruitment-program .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 2);
+  }
+}
+
+/* 3) 다른 개발자들이 많이 지원한 포지션 */
+.section__body--snd {
+  display: block;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.others-applied-position .slide {
+  position: relative;
+  width: 100%;
+}
+
+.others-applied-position .slide__list {
+  width: 200%;
+}
+
+.others-applied-position .slide__inner {
+  padding-right: 1rem;
+  width: calc(200% / 6);
+}
+
+.others-applied-position .slide__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 15rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.others-applied-position .slide__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.others-applied-position .slide__img {
+  margin-right: 1rem;
+  width: 5rem;
+}
+
+.others-applied-position .slide__subtitle {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.others-applied-position .slide__title {
+  font-weight: 700;
+}
+
+.others-applied-position .slide__title--gray {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.others-applied-position .slide__conditions {
+  display: flex;
+  border-top: 1px solid rgb(215, 226, 235);
+}
+
+.others-applied-position .slide__condition {  
+  padding-top: 1rem;
+  width: 50%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.others-applied-position .slide__condition:first-child {
+  border-right: 1px solid rgb(215, 226, 235);
+}
+
+.others-applied-position .slide__condition--gray {
+  margin-bottom: 0.3rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.others-applied-position .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.others-applied-position .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.others-applied-position .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.others-applied-position .slide__next-btn {
+  position: absolute;
+  right: 1rem;
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .others-applied-position .slide__list {
+    width: calc(100% * 3);
+
+  }
+  
+  .others-applied-position .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 6);
+  }
+}
+
+@media screen and (max-width: 575px) {  /* 스마트폰 크기 이하 */
+  .others-applied-position .slide__list {
+    width: calc(100% * 6);
+
+  }
+  
+  .others-applied-position .slide__inner {
+    padding-right: 0.5rem;
+    width: calc(100% / 6);
+  }
+}
+
+/* 4) 내가 지원한 포지션 */
+.section__body--trd {
+  display: block;
+  width: 100%;
+}
+
+.my-applied-position .slide {
+  position: relative;
+}
+
+.my-applied-position .slide__list {
+  width: calc(100% * 1);
+}
+
+.my-applied-position .slide__inner {
+  width: calc(100% / 1);
+}
+
+.my-applied-position .slide__item {
+  padding: 1.5rem;
+  height: 15rem;
+  border: 1px solid rgb(215, 226, 235);
+  border-radius: 1rem;
+}
+
+.my-applied-position .slide__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.my-applied-position .slide__img {
+  width: 6rem;
+}
+
+.my-applied-position .slide__content {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
+
+.my-applied-position .btn-group {
+  flex-direction: column;
+  justify-content: end;
+  height: 20%;
+}
+
+.my-applied-position .btn-group__item {
+  width: 100%;
+}
+
+.my-applied-position .btn-group__link {
+  border: 1px solid rgb(215, 226, 235);
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.my-applied-position .slide__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.my-applied-position .slide__btn {
+  display: none;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.13);
+  font-weight: 900;
+}
+
+.my-applied-position .slide__prev-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.my-applied-position .slide__next-btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* ---------- footer ---------- */
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer__top {
+  margin-bottom: 3rem;
+}
+
+.utility__group {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.utility__item {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.utility__title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.utility__content {
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.footer__bottom {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+.company-info__title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.company-info__content {
+  line-height: 0.8rem;
+}
+
+@media screen and (max-width: 992px) {  /* 태블릿 크기 이하 */
+  .utility__group {
+    display: block;
+  }  
+}
