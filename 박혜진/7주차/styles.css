@@ -1,0 +1,632 @@
+/* BEM 방법론 (블록-요소-수정) */
+
+/* 요소에 따라서 __(더블 언더스코어)와 --(더블 하이픈)으로 구분 */
+
+/* 폰트 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 반응형 */
+/* 모바일 최대 크기 : 574px 
+   태블릿 최대 크기 : 766px
+   데스크탑 최대 크기 : 990px
+   큰 데스트탑 최소 크기 : 991px */
+
+/* 큰 데스크탑 */
+@media screen and (min-width: 991px) {
+    .nav__desktop {
+        display: none;
+    }
+    .nav__tablet {
+        display: none;
+    }
+    .nav__mobile {
+        display: none;
+    }
+    .main__rank__desktop {
+        display: none;
+    }
+    .main__rank--tablet {
+        display: none;
+    }
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 766px) and (max-width: 990px) {
+    .nav__lg__desktop {
+        display: none;
+    }
+    .nav__tablet {
+        display: none;
+    }
+    .nav__mobile {
+        display: none;
+    }
+    .main__rank__lg__desktop {
+        display: none;
+    }
+    .main__rank--tablet {
+        display: none;
+    } 
+}
+
+/* 테블릿 */
+@media screen and (min-width: 574px) and (max-width: 766px) {
+    .nav__lg__desktop {
+        display: none;
+    }    
+    .nav__desktop {
+        display: none;
+    }
+    .nav__mobile {
+        display: none;
+    }
+    .main__rank__lg__desktop {
+        display: none;
+    }
+    .main__rank__desktop {
+        display: none;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 574px) {
+    .nav__lg__desktop {
+        display: none;
+    }
+    .nav__desktop {
+        display: none;
+    }
+    .nav__tablet {
+        display: none;
+    }
+    .main__rank__lg__desktop {
+        display: none;
+    }
+    .main__rank__desktop {
+        display: none;
+    }
+}
+
+
+/* 네브바 */
+
+.nav__lg__desktop {
+    padding: 11px;
+    border-bottom: solid 1px rgb(243, 243, 243);
+}
+
+.nav__lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__logo {
+    margin-right: 72px;
+    width: 205.86px;
+}
+
+.nav__bold a {
+    font-size: 20px;
+    margin-right: 32px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.nav__light a {
+    font-size: 17px;
+    margin-right: 32px;
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+button {
+    text-decoration: none;
+    background-color: transparent;
+    border-style: none;
+}
+
+.nav__name {
+    display: flex;
+    align-items: center;
+}
+
+.nav__name div {
+    color: #0084ff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav__name img {
+    width: 23px;
+    height: 23px;
+    margin: 0 14px;
+}
+
+/* 데스크탑 크기 */
+.nav__lists--desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(243, 243, 243);
+}
+
+.nav__logo--desktop {
+    margin-right: 72px;
+    width: 205.86px;
+}
+
+.nav__list--desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 13px;
+}
+
+.nav__name--desktop img:first-of-type {
+    width: 3vw;
+}
+
+.nav__name--desktop img:last-of-type {
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.nav__list2--desktop {
+    padding: 13px;
+    border-bottom: solid 1px rgb(243, 243, 243);
+}
+
+/* 테블릿 크기 */
+.nav__lists--tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(243, 243, 243);
+}
+
+.nav__logo--tablet {
+    margin-right: 52px;
+    width: 170px;
+}
+
+.nav__list--tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 11px;
+}
+
+.nav__bold--tablet a {
+    text-decoration: none;
+    margin-right: 32px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.nav__light--tablet a {
+    text-decoration: none;
+    margin-right: 32px;
+    color: #6b6b6b;
+}
+
+.nav__name--tablet img:first-of-type {
+    width: 3vw;
+    margin-left: -13px;
+}
+
+.nav__name--tablet img:last-of-type {
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.nav__list2--tablet {
+    padding: 13px;
+    border-bottom: solid 1px rgb(243, 243, 243);
+}
+
+/* 모바일 크기 */
+.nav__logo--mobile {
+    width: 28px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+/* 메인 레벨 및 랭킹 */
+main {
+    padding: 0px 20px;
+}
+
+/* 큰 데스크탑, 데스크탑 */
+.main__rank__lg__desktop, .main__rank__desktop {
+    padding-top: 90px;
+}
+
+.main__rank--title {
+    font-size: 33px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.main__rank--title span {
+    color: #0078ff;
+}
+
+.main__rank--blocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__rank--block {
+    height: 80px;
+    width: 19%;
+    background-color: #eef6ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px;
+}
+
+.main__rank--block img {
+    height: 97px;
+    width: 97px;
+}
+
+.main__rank--block--img {
+    margin-top: -13.5px;
+}
+
+.main__rank--block--title {
+    font-size: 17px;
+}
+
+.main__rank--block--title div:first-child {
+    color: #0078ff;
+}
+
+.main__rank--block--title span {
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.main__rank__desktop--block {
+    height: 62px;
+    width: 20%;
+    background-color: #eef6ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.main__rank__desktop--block img {
+    height: 53px;
+    width: 53px;
+}
+
+.main__rank__desktop--block--img {
+    margin-top: 20px;
+    margin-right: -10px;
+}
+
+.main__rank__desktop--block--title {
+    font-size: 14px;
+}
+
+.main__rank__desktop--block--title div:first-child {
+    color: #0078ff;
+    padding-bottom: 5px;
+}
+
+.main__rank__desktop--block--title span {
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* 태블릿, 모바일 */
+.main__rank--tablet {
+    padding-top: 45px;
+}
+
+.main__rank--title--tablet {
+    font-size: 27px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.main__rank--title--tablet span {
+    color: #0078ff;
+}
+
+.main__rank__tablet--blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.main__rank__tablet--block {
+    height: 62px;
+    width: 42.5%;
+    background-color: #eef6ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.main__rank__tablet--block img {
+    height: 53px;
+    width: 53px;
+}
+
+.main__rank__tablet--block--img {
+    margin-top: 20px;
+    margin-right: -10px;
+}
+
+.main__rank__tablet--block--title {
+    font-size: 14px;
+}
+
+.main__rank__tablet--block--title div:first-child {
+    color: #0078ff;
+    padding-bottom: 5px;
+}
+
+.main__rank__tablet--block--title span {
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* 메인 광고 캐러셀 1 */
+.main__ad {
+    margin: 72px 20px;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.main__ad__carousel {
+    display: flex;
+    width: 600%;
+}
+
+.main__ad__item {
+    display: flex;
+    width: 100%;
+    height: 236px;
+    padding: 30px 20px 40px 60px;
+    background-color: #000;
+    border-radius: 15px;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.item__letter {
+    color: white;
+}
+
+.item__letter h6 {
+    font-size: 13.8px;
+    background-color: rgba(74,74,74,.4);
+    letter-spacing: -0.5px;
+    margin: 0px 0px 8px;
+    padding: 8px;
+    width: 141.5px;
+    border-radius: 5px;
+}
+
+.item__letter h4 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px 0px 8px;
+    padding: 8px;
+}
+
+.item__letter h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: -8px 0px 8px;
+    padding: 8px;
+    opacity: .8;
+}
+
+.item__button {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.item__number {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0px 5px;
+}
+
+.item__div {
+    font-size: 12px;
+    padding: 0px 7px;
+    margin-top: 4px;
+    opacity: .25;
+}
+
+.item__all {
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.item__img {
+    display: flex;
+    align-items: center;
+}
+
+.item__img img {
+    width: 704px;
+    height: 260px;
+    margin-left: -10px;
+    position: absolute;
+}
+
+.carosel-control-left {
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(135deg);
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.carosel-control-right {
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+/* 강의 섹션 */
+article {
+    padding: 72px 20px;
+}
+
+.lecture__title {
+    padding: 0px 20px;
+    margin-bottom: 38px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.lecture__blocks {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+.lecture__now {
+    width: 32%;
+}
+
+.lecture__now--title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.lecture__now--title span {
+    color: white;
+    background-color: #000;
+    border-radius: 100%;
+    padding: 3px 10.4px 4.2px 10.4px;
+    margin: 0px 0px 0px 5px;
+    font-size: 15px;
+}
+
+.lecture__now--block {
+    padding: 32px 28px;
+    height: 320px;
+    border: solid 1px;
+    border-color: #d8e0e9;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.lecture__now--block img {
+    width: 68px;
+    height: 87px;
+    padding: 30px 0px;
+}
+
+.lecture__now--block div:nth-child(2) {
+    font-size: 18px;
+    color: #abc7e7;
+    padding: 10px 0px;
+}
+
+.lecture__now--block button {
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(196, 219, 232, 0.1);
+    border: solid 1px;
+    border-color: #d8e0e9;
+    border-radius: 5px;
+    padding: 13px 100px;
+    cursor: pointer;
+}
+
+.lecture__now--title i {
+    padding-left: 5px;
+}
+
+.lecture__recommend {
+    width: 64%;
+}
+
+.lecture__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lecture__item {
+    width: 40%;
+    background: linear-gradient(224.02deg, rgb(23, 116, 198) 4.61%, rgb(0, 224, 190) 93.66%);
+    border-radius: 15px;
+    height: 320px;
+    padding: 32px;
+}
+
+.leture__item--title {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leture__item--title div:nth-child(2) {
+    font-size: 30px;
+}
+
+.leture__item--content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leture__item--img img {
+    width: 75px;
+    height: 110px;
+    padding: 60px 0px;
+}
+
+.lecture__item:nth-child(2) {
+    background: linear-gradient(224.02deg, rgb(0, 67, 168) 4.61%, rgb(0, 130, 240) 93.66%);
+}
+
+.leture__item--btn {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 14px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
